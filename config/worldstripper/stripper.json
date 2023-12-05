@@ -45,6 +45,11 @@
     "minecraft:kelp_plant",
     "minecraft:deepslate",
     "minecraft:tuff",
-    "minecraft:glow_lichen"
+    "minecraft:glow_lichen",
+    "twigs:rhyolite",
+    "create:veridium",
+    "minecraft:smooth_basalt",
+    "minecraft:calcite",
+    "create:limestone"
   ]
 }

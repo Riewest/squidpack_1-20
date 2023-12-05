@@ -4,7 +4,7 @@
 	useEnergy = true
 	#Amount of energy that can be stored in a scanner.
 	#Range: > 0
-	energyCapacityScanner = 5000
+	energyCapacityScanner = 9001
 	#Amount of energy used by the range module per scan.
 	#Range: > 0
 	energyCostModuleRange = 100
@@ -42,7 +42,7 @@
 	rangeModifierModuleOreCommon = 0.25
 	#Relative effective range of the rare ore module.
 	#Range: 0.0 ~ 1.0
-	rangeModifierModuleOreRare = 0.25
+	rangeModifierModuleOreRare = 0.5
 	#Relative effective range of the block module.
 	#Range: 0.0 ~ 1.0
 	rangeModifierModuleBlock = 0.5

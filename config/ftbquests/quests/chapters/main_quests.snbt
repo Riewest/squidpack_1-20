@@ -1,0 +1,288 @@
+{
+	id: "31578F964009F538"
+	group: ""
+	order_index: 0
+	filename: "main_quests"
+	title: "Main Quests"
+	icon: "minecraft:end_portal_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Black Box"
+			icon: "ftbquests:screen_1"
+			x: 0.5d
+			y: 0.0d
+			description: ["Create an FTB Quests Task Screen to automate the submission of large quantities of items/fluids."]
+			id: "51993C48DBE853AA"
+			tasks: [
+				{
+					id: "206FC6F75FDDFEB0"
+					type: "item"
+					item: "ftbquests:screen_1"
+				}
+				{
+					id: "5B539E48EE7C0437"
+					type: "fluid"
+					title: "First Fluid Submission"
+					fluid: "minecraft:water"
+					amount: 10000L
+				}
+				{
+					id: "4C22DFD797CCF7C2"
+					type: "item"
+					title: "Any #forge:cobblestone"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:cobblestone"
+						}
+					}
+					count: 512L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "018E18D4143FCF71"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5873972906088391538L
+			}]
+		}
+		{
+			title: "3-Headed Terror"
+			x: 2.5d
+			y: -0.5d
+			subtitle: "Wither Wither Chicken Dinner"
+			description: [
+				""
+				"You can't beat the game without fighting the scary boss."
+				""
+				"Who do you think you are?"
+			]
+			dependencies: ["51993C48DBE853AA"]
+			id: "430BE30820C28D7C"
+			tasks: [{
+				id: "4F0AEAC302D34A7F"
+				type: "kill"
+				icon: "minecraft:wither_skeleton_skull"
+				entity: "minecraft:wither"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "7960B2473A9220CA"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+					count: 2
+				}
+				{
+					id: "43AF6ABC3FD2EA5D"
+					type: "item"
+					item: "minecraft:cooked_chicken"
+					count: 32
+				}
+				{
+					id: "6E87177CF3BAB0D3"
+					type: "item"
+					item: "bhc:yellow_heart_canister"
+				}
+			]
+		}
+		{
+			title: "Prospector"
+			icon: "tuffores:tuff_ores_module"
+			x: 1.5d
+			y: -1.0d
+			subtitle: "Silk touch!"
+			description: ["Get a scanning module to scan for Tuff Ore veins! Tuff Ore veins are very rare and contain hundreds of thousands of ore chunks! They are extremely tough to mine. Mining should be automated with Create or other means."]
+			dependencies: ["51993C48DBE853AA"]
+			id: "59E050BF164363F6"
+			tasks: [
+				{
+					id: "40493C23CF9CA781"
+					type: "item"
+					title: "Any #forge:ores/coal"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/coal"
+						}
+					}
+				}
+				{
+					id: "0F5CCB8448D16253"
+					type: "item"
+					title: "Any #forge:ores/iron"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/iron"
+						}
+					}
+				}
+				{
+					id: "5FD7381A4DD82183"
+					type: "item"
+					title: "Any #forge:ores/copper"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/copper"
+						}
+					}
+				}
+				{
+					id: "3B2223F3A1FC2E1B"
+					type: "item"
+					title: "Any #forge:ores/gold"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/gold"
+						}
+					}
+				}
+				{
+					id: "0B201E3281C40031"
+					type: "item"
+					title: "Any #forge:ores/redstone"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/redstone"
+						}
+					}
+				}
+				{
+					id: "7488EE1ACEE50A97"
+					type: "item"
+					title: "Any #forge:ores/emerald"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/emerald"
+						}
+					}
+				}
+				{
+					id: "23AE6D7B34F17EEA"
+					type: "item"
+					title: "Any #forge:ores/lapis"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/lapis"
+						}
+					}
+				}
+				{
+					id: "22F3D5750867CCA5"
+					type: "item"
+					title: "Any #forge:ores/diamond"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ores/diamond"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3813CE1F9367A981"
+				type: "item"
+				item: "tuffores:tuff_ores_module"
+			}]
+		}
+		{
+			title: "What!? No Strongholds?"
+			x: 4.5d
+			y: 0.0d
+			subtitle: "Fine, I'll do it Myself..."
+			description: ["Strongholds don't exist so you'll have to create your own End Portal."]
+			dependencies: [
+				"430BE30820C28D7C"
+				"61DBB3C6672677ED"
+			]
+			id: "53FF2B6D648A8BDA"
+			tasks: [{
+				id: "4E4405A4DA6EBC34"
+				type: "item"
+				item: "minecraft:end_portal_frame"
+				count: 12L
+				consume_items: false
+			}]
+			rewards: [{
+				id: "4F7C80313E929BB7"
+				type: "item"
+				item: "minecraft:ender_eye"
+				count: 11
+			}]
+		}
+		{
+			title: "Blind Beasty"
+			icon: "minecraft:sculk_shrieker"
+			x: 2.5d
+			y: 0.5d
+			subtitle: "Step Softly"
+			description: ["Brave the darkness...   Good luck..."]
+			dependencies: ["51993C48DBE853AA"]
+			id: "61DBB3C6672677ED"
+			tasks: [{
+				id: "1A95C15CB4F7A7CC"
+				type: "kill"
+				icon: "minecraft:sculk_shrieker"
+				entity: "minecraft:warden"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "4D9632A5995CF7BD"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+					count: 2
+				}
+				{
+					id: "07130DFE120B5600"
+					type: "item"
+					item: "minecraft:cooked_chicken"
+					count: 32
+				}
+				{
+					id: "3585BB5935A26A41"
+					type: "item"
+					item: "bhc:yellow_heart_canister"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			shape: "octagon"
+			dependencies: ["53FF2B6D648A8BDA"]
+			size: 2.0d
+			id: "3CFA2DDAC03DE4C0"
+			tasks: [{
+				id: "157F9744E8A9D348"
+				type: "item"
+				item: "kubejs:squid_god_tribute"
+			}]
+			rewards: [{
+				id: "5538578B6156DD49"
+				type: "command"
+				command: "/gamemode creative @p"
+				player_command: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}
