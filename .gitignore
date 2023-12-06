@@ -36,3 +36,5 @@ crash-reports
 blueprints/logicengineer/pack.json
 patchouli_data.json
 TrashSlotSaveState.json
+.vscode
+blueprints
