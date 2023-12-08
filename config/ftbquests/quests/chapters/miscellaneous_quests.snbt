@@ -1,369 +1,401 @@
 {
-	id: "05EC07ED3E3154EC"
-	group: ""
-	order_index: 1
-	filename: "miscellaneous_quests"
-	title: "Miscellaneous Quests"
-	icon: "ftbquests:missing_item"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "miscellaneous_quests"
+	group: ""
+	icon: "tradingpost:trading_post"
+	id: "05EC07ED3E3154EC"
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
-			title: "The Shameless Plug"
-			x: 0.0d
-			y: 0.0d
-			subtitle: "What is it?"
 			description: [
 				"Craft a Synchronous Switch and set it's channel with named paper."
 				""
 				"All Synchronous blocks on the same channel will activate together."
 			]
 			id: "3159FD48C0C3DF2D"
-			tasks: [{
-				id: "4F88D9659744CAF0"
-				type: "item"
-				item: "syncswitch:switch_block"
-				consume_items: false
-			}]
 			rewards: [
 				{
-					id: "4277D4B1F26576D8"
-					type: "item"
-					item: "syncswitch:light_block"
 					count: 16
+					id: "4277D4B1F26576D8"
+					item: "syncswitch:light_block"
+					type: "item"
 				}
 				{
 					id: "5A0E080A48C458A1"
-					type: "item"
 					item: {
-						id: "minecraft:paper"
 						Count: 1b
+						id: "minecraft:paper"
 						tag: {
 							display: {
 								Name: "{\"text\":\"Channel 1\"}"
 							}
 						}
 					}
+					type: "item"
 				}
 			]
+			subtitle: "What is this?"
+			tasks: [{
+				consume_items: false
+				id: "4F88D9659744CAF0"
+				item: "syncswitch:switch_block"
+				type: "item"
+			}]
+			title: "The Shameless Plug"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			title: "Diluted Tears"
-			x: 0.0d
-			y: -2.0d
 			description: ["This is worse than the Dirt Chest 9000!"]
 			id: "09D780D293808DAD"
-			tasks: [{
-				id: "682AD3957C697433"
-				type: "item"
-				item: "botania:diluted_pool"
-				consume_items: false
-			}]
 			rewards: [
 				{
 					id: "41DAC9F67A127974"
-					type: "item"
 					item: "botania:black_lotus"
+					type: "item"
 				}
 				{
-					id: "07494E0EB1A5F6B3"
-					type: "choice"
 					exclude_from_claim_all: true
+					id: "07494E0EB1A5F6B3"
 					table_id: 6061288789447424664L
+					type: "choice"
 				}
 			]
+			tasks: [{
+				consume_items: false
+				id: "682AD3957C697433"
+				item: "botania:diluted_pool"
+				type: "item"
+			}]
+			title: "Diluted Tears"
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			icon: "create:mechanical_saw"
-			x: 1.5d
-			y: -1.0d
 			id: "0726CBFAFF030C96"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E3ECCA1F0439D47"
+				table_id: 2832228962135375950L
+				type: "choice"
+			}]
 			tasks: [
 				{
-					id: "7C1184DC1805F530"
-					type: "item"
-					item: "create:mechanical_saw"
 					consume_items: false
+					id: "7C1184DC1805F530"
+					item: "create:mechanical_saw"
+					type: "item"
 				}
 				{
-					id: "2BEA3EDCCB7A40B7"
-					type: "item"
-					item: "create:hand_crank"
 					consume_items: false
+					id: "2BEA3EDCCB7A40B7"
+					item: "create:hand_crank"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "1E3ECCA1F0439D47"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 2832228962135375950L
-			}]
+			x: 1.5d
+			y: -1.0d
 		}
 		{
-			title: "Miniaturization!"
-			x: 1.5d
-			y: 1.0d
-			subtitle: "Tuber's Law"
 			description: ["Research entity shrinking."]
 			id: "603AD93261BD5E85"
-			tasks: [{
-				id: "15F5C3D49927F3AC"
-				type: "item"
-				item: "botania:tiny_potato"
-			}]
 			rewards: [{
 				id: "2A8346E98E9F1A0E"
-				type: "item"
 				item: {
-					id: "shrink:shrinking_device"
 					Count: 1b
+					id: "shrink:shrinking_device"
 					tag: {
 						Energy: 100000
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "Tuber's Law"
+			tasks: [{
+				id: "15F5C3D49927F3AC"
+				item: "botania:tiny_potato"
+				type: "item"
+			}]
+			title: "Miniaturization!"
+			x: 1.5d
+			y: 1.0d
 		}
 		{
-			title: "If you really want one..."
+			can_repeat: true
+			description: ["Is it really worth it?"]
 			icon: {
-				id: "ironjetpacks:jetpack"
 				Count: 1b
+				id: "create_jetpack:jetpack"
 				tag: {
-					Id: "ironjetpacks:copper"
-					Throttle: 1.0d
+					Air: 900.0f
 				}
 			}
-			x: 0.0d
-			y: 2.0d
-			subtitle: "Got a permit for that?"
-			description: ["Copper is as good as it gets."]
 			id: "15A0B2D166EC04C1"
-			tasks: [
-				{
-					id: "054894824B6A414D"
-					type: "item"
-					item: {
-						id: "ironjetpacks:jetpack"
-						Count: 1b
-						tag: {
-							Id: "ironjetpacks:wood"
-							Throttle: 1.0d
-						}
-					}
-				}
-				{
-					id: "07C65B29C7AC9910"
-					type: "item"
-					item: "minecraft:phantom_membrane"
-					count: 32L
-				}
-				{
-					id: "5C8056A8432FEEB0"
-					type: "item"
-					item: "minecraft:firework_rocket"
-					count: 1024L
-				}
-			]
 			rewards: [{
 				id: "19599453058A9D02"
-				type: "item"
 				item: {
-					id: "ironjetpacks:jetpack"
 					Count: 1b
+					id: "create_jetpack:jetpack"
 					tag: {
-						Id: "ironjetpacks:copper"
-						Throttle: 1.0d
+						Air: 900.0f
 					}
 				}
+				type: "item"
 			}]
-		}
-		{
-			title: "Florist"
-			icon: "botania:orange_mystical_flower"
-			x: -1.5d
-			y: 1.0d
-			subtitle: "Gotta pick 'em all!"
-			id: "223EBD21095A3513"
+			subtitle: "Got a permit for that?"
 			tasks: [
 				{
-					id: "264AFBC123BFA916"
+					consume_items: true
+					id: "054894824B6A414D"
+					item: {
+						Count: 1b
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "botania:white_mystical_flower"
-					consume_items: false
 				}
 				{
-					id: "4C3ACC43194887A0"
+					count: 32L
+					id: "07C65B29C7AC9910"
+					item: "minecraft:phantom_membrane"
 					type: "item"
-					item: "botania:orange_mystical_flower"
+				}
+				{
+					count: 1024L
+					id: "5C8056A8432FEEB0"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
+				{
+					id: "5CC55E66EC3BDEAC"
+					item: {
+						Count: 1b
+						id: "create:netherite_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "If you really want one..."
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			icon: "botania:orange_mystical_flower"
+			id: "223EBD21095A3513"
+			rewards: [
+				{
+					count: 4
+					id: "29E9851D619DB893"
+					item: "botania:grass_seeds"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F32CB56CEA19A4B"
+					table_id: 6061288789447424664L
+					type: "choice"
+				}
+			]
+			subtitle: "Gotta pick 'em all!"
+			tasks: [
+				{
 					consume_items: false
+					id: "264AFBC123BFA916"
+					item: "botania:white_mystical_flower"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4C3ACC43194887A0"
+					item: "botania:orange_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "789B4D49D0FA8D16"
-					type: "item"
 					item: "botania:magenta_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "341CD67DF76EEB0C"
-					type: "item"
 					item: "botania:light_blue_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "6B35E238C35BBDD4"
-					type: "item"
 					item: "botania:yellow_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "44B10425231A2A38"
-					type: "item"
 					item: "botania:lime_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "4479C96B538204B2"
-					type: "item"
 					item: "botania:pink_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "7BFD91685BB4ED5D"
-					type: "item"
 					item: "botania:gray_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "3D3F5D338903D381"
-					type: "item"
 					item: "botania:light_gray_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "7E8E1CBC186856B8"
-					type: "item"
 					item: "botania:cyan_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "29E251D4642BB9E2"
-					type: "item"
 					item: "botania:purple_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "6126809C0A7869F4"
-					type: "item"
 					item: "botania:blue_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "555999DE3282DB62"
-					type: "item"
 					item: "botania:brown_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "77E65928340950B9"
-					type: "item"
 					item: "botania:green_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "5339A6793201BCA5"
-					type: "item"
 					item: "botania:red_mystical_flower"
+					type: "item"
 				}
 				{
 					id: "3B87B86FB6EE0F8B"
-					type: "item"
 					item: "botania:black_mystical_flower"
-				}
-			]
-			rewards: [
-				{
-					id: "29E9851D619DB893"
 					type: "item"
-					item: "botania:grass_seeds"
-					count: 4
-				}
-				{
-					id: "3F32CB56CEA19A4B"
-					type: "choice"
-					exclude_from_claim_all: true
-					table_id: 6061288789447424664L
 				}
 			]
+			title: "Florist"
+			x: -1.5d
+			y: 1.0d
 		}
 		{
-			title: "Better Than Amazon!"
-			icon: "tradingpost:trading_post"
-			x: -1.5d
-			y: -1.0d
-			subtitle: "Free shipping."
+			can_repeat: true
 			description: ["Easier trading."]
+			icon: "tradingpost:trading_post"
 			id: "61C41EA914E9E335"
+			rewards: [{
+				id: "1400FD5EF130E8DB"
+				item: "tradingpost:trading_post"
+				type: "item"
+			}]
+			subtitle: "Free shipping."
 			tasks: [
 				{
 					id: "12C2FC0975705DBD"
-					type: "item"
 					item: "minecraft:experience_bottle"
+					type: "item"
 				}
 				{
 					id: "75C55A61BACD8FE2"
-					type: "item"
 					item: "minecraft:saddle"
+					type: "item"
 				}
 				{
 					id: "38911EF14E6A012A"
-					type: "item"
 					item: "minecraft:bell"
+					type: "item"
 				}
 				{
 					id: "28E07F25A7655972"
-					type: "item"
 					item: "minecraft:globe_banner_pattern"
+					type: "item"
 				}
 				{
 					id: "1BE55690DA687EC0"
-					type: "item"
 					item: "minecraft:name_tag"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "1400FD5EF130E8DB"
-				type: "item"
-				item: "tradingpost:trading_post"
-			}]
+			title: "Better Than Amazon!"
+			x: -1.5d
+			y: -1.0d
 		}
 		{
-			x: 0.0d
-			y: -4.0d
-			subtitle: "Yikes..."
 			description: ["Might want to get that checked out."]
-			invisible: true
 			id: "51DB2C4B8306A904"
-			tasks: [{
-				id: "63992F1295BA09B9"
-				type: "stat"
-				stat: "minecraft:deaths"
-				value: 100
-			}]
+			invisible: true
+			optional: true
 			rewards: [{
 				id: "640FA5BA5B1F0C66"
-				type: "item"
 				item: "minecraft:totem_of_undying"
+				type: "item"
 			}]
+			subtitle: "Yikes..."
+			tasks: [{
+				id: "63992F1295BA09B9"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 100
+			}]
+			x: 0.0d
+			y: -4.0d
 		}
 		{
+			id: "1204EE0BCB850CB6"
+			invisible: true
+			optional: true
+			rewards: [{
+				auto: "disabled"
+				id: "3D9D4B8C516DF637"
+				team_reward: false
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "693CBFA817E24EE5"
+				observe_type: 5
+				timer: 1200L
+				to_observe: "minecraft:painting"
+				type: "observation"
+			}]
 			title: "This is Art."
 			x: 0.0d
 			y: 4.0d
-			invisible: true
-			id: "1204EE0BCB850CB6"
-			tasks: [{
-				id: "693CBFA817E24EE5"
-				type: "observation"
-				timer: 1200L
-				observe_type: 5
-				to_observe: "minecraft:painting"
-			}]
+		}
+		{
+			id: "7F77A692D997C831"
 			rewards: [{
-				id: "3D9D4B8C516DF637"
-				type: "xp"
-				team_reward: false
-				auto: "disabled"
-				xp: 100
+				count: 8
+				id: "307D2617940649EC"
+				item: "ae2:silicon"
+				type: "item"
 			}]
+			subtitle: "But how to farm them?"
+			tasks: [{
+				consume_items: false
+				id: "3329A496CBA68ABC"
+				item: "minecraft:chorus_flower"
+				type: "item"
+			}]
+			title: "A Strange Purple Flower"
+			x: 3.0d
+			y: 0.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Miscellaneous Quests"
 }

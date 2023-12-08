@@ -15,3 +15,24 @@ ServerEvents.blockLootTables(event => {
         })
     }
 })
+
+ServerEvents.recipes(event => {
+    event.remove({
+        output: [
+            'tuffores:tuff_ores_module'
+        ]
+    })
+
+    event.recipes.createCompacting('tuffores:tuff_ores_module', [
+        '#forge:ores/coal',
+        '#forge:ores/gold',
+        '#forge:ores/iron',
+        '#forge:ores/diamond',
+        '#forge:ores/emerald',
+        '#forge:ores/redstone',
+        '#forge:ores/lapis',
+        '#forge:ores/copper',
+        'scannable:blank_module'
+    ])
+
+})

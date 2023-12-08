@@ -1,1031 +1,1025 @@
 {
-	id: "0084D42791418EDA"
-	group: ""
-	order_index: 2
-	filename: "player_upgrades"
-	title: "Player Upgrades"
-	icon: "bhc:red_heart"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "player_upgrades"
+	group: ""
+	icon: "colossalchests:upgrade_tool"
+	id: "0084D42791418EDA"
+	order_index: 2
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Light as a Feather"
+			description: ["Pylon Upgrade: Slow Falling"]
 			icon: "minecraft:feather"
-			x: 0.0d
-			y: 0.0d
-			subtitle: "Pound of Feathers"
-			description: ["Upgrade your pylon with Slow Falling!"]
 			id: "6D77AFF9B7AA63BE"
-			tasks: [
-				{
-					id: "73BEF58171C62DED"
-					type: "item"
-					item: "minecraft:feather"
-					count: 1024L
-				}
-				{
-					id: "7EF79CDAF247525A"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 4s
-								id: "minecraft:feather_falling"
-							}]
-						}
-					}
-					count: 8L
-				}
-			]
 			rewards: [{
 				id: "7CA983DBC01F7EBF"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:slow_falling"
 						}
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "Pound of Feathers"
+			tasks: [
+				{
+					count: 1024L
+					id: "73BEF58171C62DED"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7EF79CDAF247525A"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Light as a Feather"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			title: "Leprechaun's Luck"
+			description: ["Pylon Upgrade: Luck V"]
 			icon: {
-				id: "minecraft:potion"
 				Count: 1b
+				id: "minecraft:potion"
 				tag: {
 					Potion: "minecraft:luck"
 				}
 			}
-			x: -1.0d
-			y: 1.5d
-			subtitle: "Do you feel lucky, Punk?"
-			description: ["Upgrade your pylon with Luck V!"]
 			id: "3814B8FACBF35621"
-			tasks: [
-				{
-					id: "3605753AD8047250"
-					type: "item"
-					item: "minecraft:lapis_block"
-					count: 2048L
-				}
-				{
-					id: "22E84086DDD07C98"
-					type: "item"
-					item: "minecraft:rabbit_foot"
-					count: 8L
-				}
-				{
-					id: "421B6ABE7862A7CD"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 3s
-								id: "minecraft:fortune"
-							}]
-						}
-					}
-					count: 8L
-				}
-				{
-					id: "4CC14A624698BC0F"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 3s
-								id: "minecraft:luck_of_the_sea"
-							}]
-						}
-					}
-					count: 8L
-				}
-			]
 			rewards: [{
 				id: "7CC804AD6DA0BAAD"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 4
+							duration: 72000
 							effect: "minecraft:luck"
 						}
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "Do you feel lucky, Punk?"
+			tasks: [
+				{
+					count: 2048L
+					id: "3605753AD8047250"
+					item: "minecraft:lapis_block"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "22E84086DDD07C98"
+					item: "minecraft:rabbit_foot"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "421B6ABE7862A7CD"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4CC14A624698BC0F"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:luck_of_the_sea"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Leprechaun's Luck"
+			x: -1.0d
+			y: 1.5d
 		}
 		{
-			title: "Unstable Intangibility"
+			description: ["Pylon Upgrade: Unstable Intangibility"]
 			icon: {
-				id: "tombstone:scroll_of_unstable_intangibility"
 				Count: 1b
+				id: "tombstone:scroll_of_unstable_intangibility"
 				tag: {
 					enchant: 1b
 				}
 			}
-			x: 1.0d
-			y: 1.5d
-			subtitle: "Temporary God Mode!"
-			description: ["Upgrade your pylon with Unstable Intangibility!"]
 			id: "72704A9AA6B905C5"
-			tasks: [
-				{
-					id: "1D70395A35CDBA2D"
-					type: "item"
-					item: {
-						id: "tombstone:scroll_of_unstable_intangibility"
-						Count: 1b
-						tag: {
-							enchant: 1b
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "3F6B8FDD927A6E47"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 4s
-								id: "minecraft:protection"
-							}]
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "72E4F8DD3CFC67A1"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 4s
-								id: "minecraft:blast_protection"
-							}]
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "71C0841C36757294"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 4s
-								id: "minecraft:projectile_protection"
-							}]
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "1834500445370D97"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 4s
-								id: "minecraft:fire_protection"
-							}]
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "60D479157AACAA0E"
-					type: "item"
-					item: "tombstone:grave_dust"
-					count: 64L
-				}
-			]
 			rewards: [{
 				id: "030AC8C401CB812E"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "tombstone:unstable_intangibility"
 						}
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "1/5th Godmode"
+			tasks: [
+				{
+					count: 2L
+					id: "1D70395A35CDBA2D"
+					item: {
+						Count: 1b
+						id: "tombstone:scroll_of_unstable_intangibility"
+						tag: {
+							enchant: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3F6B8FDD927A6E47"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:protection"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "72E4F8DD3CFC67A1"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "71C0841C36757294"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:projectile_protection"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1834500445370D97"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "60D479157AACAA0E"
+					item: "tombstone:grave_dust"
+					type: "item"
+				}
+			]
+			title: "Unstable Intangibility"
+			x: 1.0d
+			y: 1.5d
 		}
 		{
-			title: "Enchanced Eyesight"
-			x: 0.0d
-			y: 3.0d
-			subtitle: "Rabbit Food"
-			description: ["Upgrade your pylon with Night Vision!"]
+			description: ["Pylon Upgrade: Night Vision"]
 			id: "68E20FE92F0CA703"
-			tasks: [{
-				id: "5522D889C7C2B2CE"
-				type: "item"
-				item: "minecraft:golden_carrot"
-				count: 8192L
-			}]
 			rewards: [{
 				id: "2E248B72EC061576"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:night_vision"
 						}
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "Rabbit Food"
+			tasks: [{
+				count: 8192L
+				id: "5522D889C7C2B2CE"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
+			title: "Enchanced Eyesight"
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			title: "The Invisible Man"
+			description: ["Pylon Upgrade: Invisibility"]
 			icon: "botania:invisibility_cloak"
-			x: 2.0d
-			y: 3.0d
-			subtitle: "Never seen again..."
-			description: ["Upgrade your pylon with Invisibility!"]
 			id: "0692F68D3597B733"
-			tasks: [
-				{
-					id: "67EED3063BB033C7"
-					type: "item"
-					item: "botania:invisibility_cloak"
-				}
-				{
-					id: "4B804D2670C8937F"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:long_invisibility"
-						}
-					}
-					count: 128L
-				}
-			]
 			rewards: [{
 				id: "4C056741A972D555"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:invisibility"
 						}
 					}
 				}
+				type: "item"
 			}]
-		}
-		{
-			title: "You Glow Girl!"
-			icon: "minecraft:glowstone_dust"
-			x: -1.0d
-			y: 4.5d
-			subtitle: "Can you see me now?"
-			description: ["Upgrade your pylon with Glowing!"]
-			id: "7FC6D42141C89B49"
+			subtitle: "Never seen again..."
 			tasks: [
 				{
-					id: "2C475EA3D7007948"
+					id: "67EED3063BB033C7"
+					item: "botania:invisibility_cloak"
 					type: "item"
-					item: "minecraft:glowstone_dust"
-					count: 128L
 				}
 				{
-					id: "24559C7989F280C8"
-					type: "item"
-					item: "minecraft:glow_berries"
 					count: 128L
-				}
-				{
-					id: "4813957A7BDF211B"
+					id: "4B804D2670C8937F"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_invisibility"
+						}
+					}
 					type: "item"
-					item: "minecraft:glow_ink_sac"
-					count: 32L
 				}
 			]
+			title: "The Invisible Man"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			description: ["Pylon Upgrade: Glowing"]
+			icon: "minecraft:glowstone_dust"
+			id: "7FC6D42141C89B49"
 			rewards: [{
 				id: "6E91A6A7878E8741"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:glowing"
 						}
 					}
 				}
+				type: "item"
 			}]
-		}
-		{
-			title: "Testificate Man"
-			icon: "minecraft:emerald"
-			x: 1.0d
-			y: 4.5d
-			subtitle: "Hope they got that on film!"
-			description: ["Upgrade your pylon with Hero of the Village!"]
-			id: "0C79813060B87278"
+			subtitle: "Can you see me now?"
 			tasks: [
 				{
-					id: "59C755B1AF0AF36B"
-					type: "advancement"
-					icon: "minecraft:emerald"
-					advancement: "minecraft:adventure/hero_of_the_village"
-					criterion: ""
+					count: 128L
+					id: "2C475EA3D7007948"
+					item: "minecraft:glowstone_dust"
+					type: "item"
 				}
 				{
-					id: "32F82BFB67DACC56"
+					count: 128L
+					id: "24559C7989F280C8"
+					item: "minecraft:glow_berries"
 					type: "item"
-					item: "minecraft:emerald_block"
-					count: 4096L
+				}
+				{
+					count: 32L
+					id: "4813957A7BDF211B"
+					item: "minecraft:glow_ink_sac"
+					type: "item"
 				}
 			]
+			title: "You Glow Girl!"
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			description: ["Pylon Upgrade: Hero of the Village"]
+			icon: "minecraft:emerald"
+			id: "0C79813060B87278"
 			rewards: [{
 				id: "2CB19D23C223399D"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:hero_of_the_village"
 						}
 					}
 				}
+				type: "item"
 			}]
-		}
-		{
-			title: "Boing!"
-			icon: "minecraft:rabbit_foot"
-			x: 0.0d
-			y: 6.0d
-			subtitle: "Bunny Hops"
-			description: ["Upgrade your pylon with Jump Boost!"]
-			id: "43351B26BA94E462"
+			subtitle: "Hope they got that on film!"
 			tasks: [
 				{
-					id: "204B79722D8B11F0"
-					type: "item"
-					item: "minecraft:rabbit_foot"
-					count: 8L
+					advancement: "minecraft:adventure/hero_of_the_village"
+					criterion: ""
+					icon: "minecraft:emerald"
+					id: "59C755B1AF0AF36B"
+					type: "advancement"
 				}
 				{
-					id: "682B7B2483DBE9B5"
+					count: 4096L
+					id: "32F82BFB67DACC56"
+					item: "minecraft:emerald_block"
 					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:strong_leaping"
-						}
-					}
-					count: 3L
-				}
-				{
-					id: "00264D40FCD44C6A"
-					type: "item"
-					item: "minecraft:slime_block"
-					count: 64L
-				}
-				{
-					id: "02FE69CD021C4303"
-					type: "item"
-					item: "minecraft:hopper"
-					count: 64L
 				}
 			]
+			title: "Testificate Man"
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			description: ["Pylon Upgrade: Jump Boost"]
+			icon: "minecraft:rabbit_foot"
+			id: "43351B26BA94E462"
 			rewards: [{
 				id: "50B76949F9D2E534"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 1
+							duration: 72000
 							effect: "minecraft:jump_boost"
 						}
 					}
 				}
+				type: "item"
 			}]
-		}
-		{
-			title: "An Apple a Day..."
-			icon: "minecraft:apple"
-			x: 8.5d
-			y: 1.5d
-			subtitle: "Keeps the doctor away."
-			description: ["Upgrade yourself with +10 hearts!"]
-			id: "409347F163727A40"
+			subtitle: "Bunny Hops"
 			tasks: [
 				{
-					id: "40E85B166A036193"
-					type: "item"
-					item: "create:honeyed_apple"
-					count: 1024L
-				}
-				{
-					id: "0CDB62D2481A2077"
-					type: "item"
-					item: "rootsclassic:redcurrant"
-					count: 1024L
-				}
-				{
-					id: "457ECD50DA1AA988"
-					type: "item"
-					item: "minecraft:totem_of_undying"
-				}
-				{
-					id: "6241F79C64C073BD"
-					type: "item"
-					item: "minecraft:glistering_melon_slice"
-					count: 1024L
-				}
-				{
-					id: "5360E59478733716"
-					type: "item"
-					item: "minecraft:enchanted_golden_apple"
 					count: 8L
+					id: "204B79722D8B11F0"
+					item: "minecraft:rabbit_foot"
+					type: "item"
 				}
-			]
-			rewards: [{
-				id: "73C36ADFC6B01BD5"
-				type: "item"
-				item: {
-					id: "bhc:heart_amulet"
-					Count: 1b
-					tag: {
-						bhc_itemlist: {
-							Size: 4
-							Items: [{
-								Slot: 0
-								id: "bhc:red_heart_canister"
-								Count: 10b
-							}]
-						}
-						heart_amount: [I;
-							20
-							0
-							0
-							0
-						]
-						Enchantments: [{
-							lvl: 1s
-							id: "tombstone:soulbound"
-						}]
-						display: {
-							Name: "{\"text\":\"+10 Hearts\"}"
+				{
+					count: 3L
+					id: "682B7B2483DBE9B5"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_leaping"
 						}
 					}
-				}
-			}]
-		}
-		{
-			title: "Healing Aura"
-			icon: "minecraft:ghast_tear"
-			x: 9.5d
-			y: 0.0d
-			subtitle: "Return to sender?"
-			description: ["Upgrade your pylon with Regeneration!"]
-			dependencies: ["409347F163727A40"]
-			id: "530191A560517437"
-			tasks: [
-				{
-					id: "1E31BA74120D1B99"
 					type: "item"
-					item: "minecraft:ghast_tear"
-					count: 256L
 				}
 				{
-					id: "61E31DA11E9DB857"
+					count: 64L
+					id: "00264D40FCD44C6A"
+					item: "minecraft:slime_block"
 					type: "item"
-					item: "minecraft:golden_apple"
-					count: 1024L
 				}
 				{
-					id: "18C84D53735FB077"
+					count: 64L
+					id: "02FE69CD021C4303"
+					item: "minecraft:hopper"
 					type: "item"
-					item: "minecraft:enchanted_golden_apple"
-					count: 8L
 				}
 			]
+			title: "Boing!"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: ["Upgrade: Crystal Belt +5 Hearts"]
+			icon: "minecraft:apple"
+			id: "409347F163727A40"
+			rewards: [{
+				id: "73C36ADFC6B01BD5"
+				item: "artifacts:crystal_heart"
+				type: "item"
+			}]
+			subtitle: "Keeps the doctor away."
+			tasks: [
+				{
+					count: 1024L
+					id: "40E85B166A036193"
+					item: "create:honeyed_apple"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "457ECD50DA1AA988"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "6241F79C64C073BD"
+					item: "minecraft:glistering_melon_slice"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5360E59478733716"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+			]
+			title: "An Apple a Day..."
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["409347F163727A40"]
+			description: ["Pylon Upgrade: Regeneration"]
+			icon: "minecraft:ghast_tear"
+			id: "530191A560517437"
 			rewards: [{
 				id: "06D829048A4BE594"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:regeneration"
 						}
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "Return to sender?"
+			tasks: [
+				{
+					count: 256L
+					id: "1E31BA74120D1B99"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "61E31DA11E9DB857"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "18C84D53735FB077"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+			]
+			title: "Healing Aura"
+			x: 9.5d
+			y: 0.0d
 		}
 		{
-			title: "Thick Skinned"
+			description: ["Pylon Upgrade: Resistance"]
 			icon: {
-				id: "minecraft:shield"
 				Count: 1b
+				id: "minecraft:shield"
 				tag: {
 					Damage: 0
 				}
 			}
-			x: 13.5d
-			y: 3.0d
-			subtitle: "Stop resisting!"
-			description: ["Upgrade your pylon with Resistance!"]
 			id: "5C27F180358AF7D9"
-			tasks: [
-				{
-					id: "4CD030426AC41B5B"
-					type: "item"
-					item: {
-						id: "minecraft:shield"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-					count: 1024L
-				}
-				{
-					id: "26EFCCF3DECDD84A"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 4s
-								id: "minecraft:protection"
-							}]
-						}
-					}
-					count: 8L
-				}
-				{
-					id: "7F3B0523EE12CBFC"
-					type: "item"
-					item: "minecraft:obsidian"
-					count: 1024L
-				}
-				{
-					id: "1EDC8EE325E2C4B0"
-					type: "item"
-					item: {
-						id: "minecraft:turtle_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-					count: 8L
-				}
-			]
 			rewards: [{
 				id: "735D785B8DCDF65C"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:resistance"
 						}
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "Stop resisting!"
+			tasks: [
+				{
+					count: 1024L
+					id: "4CD030426AC41B5B"
+					item: {
+						Count: 1b
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "26EFCCF3DECDD84A"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:protection"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "7F3B0523EE12CBFC"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1EDC8EE325E2C4B0"
+					item: {
+						Count: 1b
+						id: "minecraft:turtle_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Thick Skinned"
+			x: 13.5d
+			y: 3.0d
 		}
 		{
-			title: "Strong Man"
+			description: ["Pylon Upgrade: Strength"]
 			icon: {
-				id: "minecraft:diamond_sword"
 				Count: 1b
+				id: "minecraft:diamond_sword"
 				tag: {
 					Damage: 0
 				}
 			}
-			x: 11.5d
-			y: 6.0d
-			subtitle: "Protein shakes all around!"
-			description: ["Upgrade your pylon with Strength!"]
 			id: "75DE6B0FF7EC5F0B"
-			tasks: [
-				{
-					id: "05991DDFADB69594"
-					type: "item"
-					item: "minecraft:cooked_beef"
-					count: 1024L
-				}
-				{
-					id: "065E920AEC153AED"
-					type: "item"
-					item: "minecraft:cooked_chicken"
-					count: 1024L
-				}
-				{
-					id: "44B63AD954957588"
-					type: "item"
-					item: "minecraft:cooked_porkchop"
-					count: 1024L
-				}
-				{
-					id: "3B58F8ACFAEAA13C"
-					type: "item"
-					item: "create:stressometer"
-				}
-			]
 			rewards: [{
 				id: "3DCC66DB447ADEB7"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:strength"
 						}
 					}
 				}
+				type: "item"
 			}]
-		}
-		{
-			title: "Endless Feast"
-			icon: "minecraft:bread"
-			x: 12.5d
-			y: 4.5d
-			subtitle: "Can I eat him now?"
-			description: ["Upgrade your pylon with Saturation!"]
-			id: "3C638E6AE980A5F9"
+			subtitle: "Protein shakes all around!"
 			tasks: [
 				{
-					id: "565985DFEAE79C35"
-					type: "item"
-					item: "minecraft:bread"
 					count: 1024L
+					id: "05991DDFADB69594"
+					item: "minecraft:cooked_beef"
+					type: "item"
 				}
 				{
-					id: "61723A08398F85F0"
-					type: "item"
-					item: "minecraft:mushroom_stew"
 					count: 1024L
+					id: "065E920AEC153AED"
+					item: "minecraft:cooked_chicken"
+					type: "item"
 				}
 				{
-					id: "0EE945F5586B6359"
-					type: "item"
-					item: "minecraft:baked_potato"
 					count: 1024L
+					id: "44B63AD954957588"
+					item: "minecraft:cooked_porkchop"
+					type: "item"
 				}
 				{
-					id: "38E5B87E44D7F5B1"
+					id: "3B58F8ACFAEAA13C"
+					item: "create:stressometer"
 					type: "item"
-					item: "minecraft:beetroot_soup"
-					count: 1024L
-				}
-				{
-					id: "3F3985CB2299DA57"
-					type: "item"
-					item: "minecraft:rabbit_stew"
-					count: 1024L
 				}
 			]
+			title: "Strong Man"
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Pylon Upgrade: Saturation"
+				""
+				"(Wardens have a 5% chance to drop Everlasting Beef when killed.)"
+			]
+			icon: "minecraft:bread"
+			id: "3C638E6AE980A5F9"
 			rewards: [{
 				id: "2BEAD4C2A4B858E4"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:saturation"
 						}
 					}
 				}
+				type: "item"
 			}]
-		}
-		{
-			title: "Fire Bender"
-			icon: "minecraft:magma_cream"
-			x: 12.5d
-			y: 1.5d
-			subtitle: "Too hot to handle!"
-			description: ["Upgrade your pylon with Fire Resistance!"]
-			id: "4156E689D2498B45"
+			subtitle: "Can I eat him now?"
 			tasks: [
 				{
-					id: "621E1363686F9844"
+					count: 1024L
+					id: "565985DFEAE79C35"
+					item: "minecraft:bread"
 					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 4s
-								id: "minecraft:fire_protection"
-							}]
-						}
-					}
+				}
+				{
+					count: 1024L
+					id: "61723A08398F85F0"
+					item: "minecraft:mushroom_stew"
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "0EE945F5586B6359"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "38E5B87E44D7F5B1"
+					item: "minecraft:beetroot_soup"
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "3F3985CB2299DA57"
+					item: "minecraft:rabbit_stew"
+					type: "item"
+				}
+				{
 					count: 8L
-				}
-				{
-					id: "383181981C503D49"
-					type: "fluid"
-					fluid: "minecraft:lava"
-					amount: 1024000L
-				}
-				{
-					id: "4E23114BDC8017AD"
+					id: "49F741D57D2D56D1"
+					item: "artifacts:eternal_steak"
 					type: "item"
-					item: "minecraft:blaze_rod"
-					count: 512L
+				}
+				{
+					id: "2658C1449B5A54E7"
+					item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					type: "item"
 				}
 			]
+			title: "Endless Feast"
+			x: 12.5d
+			y: 4.5d
+		}
+		{
+			description: ["Pylon Upgrade: Fire Resistance"]
+			icon: "minecraft:magma_cream"
+			id: "4156E689D2498B45"
 			rewards: [{
 				id: "342E2D15B08E95B8"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 0
+							duration: 72000
 							effect: "minecraft:fire_resistance"
 						}
 					}
 				}
+				type: "item"
 			}]
-		}
-		{
-			title: "I am, The Flash"
-			icon: "minecraft:sugar"
-			x: 7.5d
-			y: 3.0d
-			subtitle: "Zoom!"
-			description: ["Upgrade your pylon with Speed II!"]
-			id: "09F90870190BD788"
+			subtitle: "Too hot to handle!"
 			tasks: [
 				{
-					id: "0D60DBDB249D92DF"
-					type: "item"
-					item: "minecraft:sugar"
-					count: 8192L
-				}
-				{
-					id: "4B199AC6F420EBE6"
-					type: "item"
+					count: 8L
+					id: "621E1363686F9844"
 					item: {
-						id: "minecraft:enchanted_book"
 						Count: 1b
+						id: "minecraft:enchanted_book"
 						tag: {
 							StoredEnchantments: [{
-								lvl: 3s
-								id: "minecraft:soul_speed"
+								id: "minecraft:fire_protection"
+								lvl: 4s
 							}]
 						}
 					}
-					count: 8L
+					type: "item"
 				}
 				{
-					id: "3EC1310EF8DF1E31"
+					amount: 1024000L
+					fluid: "minecraft:lava"
+					id: "383181981C503D49"
+					type: "fluid"
+				}
+				{
+					count: 512L
+					id: "4E23114BDC8017AD"
+					item: "minecraft:blaze_rod"
 					type: "item"
-					item: "create:speedometer"
 				}
 			]
+			title: "Fire Bender"
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			description: ["Pylon Upgrade: Speed II"]
+			icon: "minecraft:sugar"
+			id: "09F90870190BD788"
 			rewards: [{
 				id: "77F35A1FBF3CCBB0"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 1
+							duration: 72000
 							effect: "minecraft:speed"
 						}
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "Zoom!"
+			tasks: [
+				{
+					count: 8192L
+					id: "0D60DBDB249D92DF"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4B199AC6F420EBE6"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:soul_speed"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3EC1310EF8DF1E31"
+					item: "create:speedometer"
+					type: "item"
+				}
+			]
+			title: "I am, The Flash"
+			x: 7.5d
+			y: 3.0d
 		}
 		{
-			title: "True Dwarf"
+			description: ["Pylon Upgrade: Haste II"]
 			icon: {
-				id: "minecraft:golden_pickaxe"
 				Count: 1b
+				id: "minecraft:golden_pickaxe"
 				tag: {
 					Damage: 0
 				}
 			}
-			x: 11.5d
-			y: 0.0d
-			subtitle: "Super Charged!"
-			description: ["Upgrade your pylon with Haste II!"]
 			id: "5D9BCFBD11106B26"
-			tasks: [
-				{
-					id: "024FC8D57EF6CC6E"
-					type: "item"
-					item: {
-						id: "minecraft:golden_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-					count: 1024L
-				}
-				{
-					id: "69C5825F4BA7A617"
-					type: "item"
-					item: "minecraft:beacon"
-				}
-				{
-					id: "35E04EDA75791570"
-					type: "forge_energy"
-					value: 100000000L
-					max_input: 1000L
-				}
-			]
 			rewards: [{
 				id: "68EC8AB08D67E6C0"
-				type: "item"
 				item: {
-					id: "pylons:potion_filter"
 					Count: 1b
+					id: "pylons:potion_filter"
 					tag: {
 						pylons: {
-							duration: 72000
 							amplifier: 1
+							duration: 72000
 							effect: "minecraft:haste"
 						}
 					}
 				}
-			}]
-		}
-		{
-			title: "Friend of Dolphins"
-			icon: "minecraft:salmon_bucket"
-			x: 8.5d
-			y: 4.5d
-			subtitle: "Swim like a fish!"
-			description: ["Upgrade your pylon with Dolphin's Grace!"]
-			id: "6F650BD60565651B"
-			tasks: [
-				{
-					id: "0ED0807B9A3B7FFB"
-					type: "item"
-					item: "minecraft:salmon_bucket"
-				}
-				{
-					id: "18302EA12A26EDF6"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 3s
-								id: "minecraft:depth_strider"
-							}]
-						}
-					}
-					count: 8L
-				}
-				{
-					id: "4078537810BFFC4D"
-					type: "item"
-					item: "minecraft:cod"
-					count: 1024L
-				}
-				{
-					id: "755720D017488854"
-					type: "item"
-					item: "minecraft:salmon"
-					count: 1024L
-				}
-				{
-					id: "4619C9AC27BAD540"
-					type: "item"
-					item: "minecraft:tropical_fish"
-					count: 128L
-				}
-			]
-			rewards: [{
-				id: "00DF3DDE9DA5CBAC"
 				type: "item"
-				item: {
-					id: "pylons:potion_filter"
-					Count: 1b
-					tag: {
-						pylons: {
-							duration: 72000
-							amplifier: 0
-							effect: "minecraft:dolphins_grace"
-						}
-					}
-				}
 			}]
-		}
-		{
-			title: "Gill Breather"
-			icon: "minecraft:kelp"
-			x: 9.5d
-			y: 6.0d
-			subtitle: "Gillyweed!"
-			dependencies: ["6F650BD60565651B"]
-			id: "2588ACEBB5C421B1"
+			subtitle: "Super Charged!"
 			tasks: [
 				{
-					id: "5A4AB70999E75B4D"
-					type: "item"
-					item: "minecraft:conduit"
-				}
-				{
-					id: "06972D122EAD25E6"
-					type: "item"
-					item: "minecraft:kelp"
-					count: 8192L
-				}
-				{
-					id: "2AEFCBE55EC6740E"
-					type: "fluid"
-					fluid: "minecraft:water"
-					amount: 1024000L
-				}
-				{
-					id: "525B5E5AA912243E"
-					type: "item"
+					count: 1024L
+					id: "024FC8D57EF6CC6E"
 					item: {
-						id: "minecraft:trident"
 						Count: 1b
+						id: "minecraft:golden_pickaxe"
 						tag: {
 							Damage: 0
 						}
 					}
-					consume_items: false
-					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "69C5825F4BA7A617"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+				{
+					id: "35E04EDA75791570"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 100000000L
 				}
 			]
+			title: "True Dwarf"
+			x: 11.5d
+			y: 0.0d
 		}
 		{
-			title: "Sufficiently Upgraded"
-			icon: "botania:gaia_head"
-			x: 10.5d
-			y: 3.0d
-			shape: "hexagon"
-			subtitle: "Begin your search..."
+			description: ["Pylon Upgrade: Dolphin's Grace"]
+			icon: "minecraft:salmon_bucket"
+			id: "6F650BD60565651B"
+			rewards: [{
+				id: "00DF3DDE9DA5CBAC"
+				item: {
+					Count: 1b
+					id: "pylons:potion_filter"
+					tag: {
+						pylons: {
+							amplifier: 0
+							duration: 72000
+							effect: "minecraft:dolphins_grace"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Swim like a fish!"
+			tasks: [
+				{
+					id: "0ED0807B9A3B7FFB"
+					item: "minecraft:salmon_bucket"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "18302EA12A26EDF6"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:depth_strider"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "4078537810BFFC4D"
+					item: "minecraft:cod"
+					type: "item"
+				}
+				{
+					count: 1024L
+					id: "755720D017488854"
+					item: "minecraft:salmon"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "4619C9AC27BAD540"
+					item: "minecraft:tropical_fish"
+					type: "item"
+				}
+			]
+			title: "Friend of Dolphins"
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6F650BD60565651B"]
+			description: ["Pylon Upgrade: Aquatic Life"]
+			icon: "minecraft:kelp"
+			id: "2588ACEBB5C421B1"
+			rewards: [{
+				id: "0F70A16BD379201E"
+				item: {
+					Count: 1b
+					id: "pylons:potion_filter"
+					tag: {
+						pylons: {
+							amplifier: 0
+							duration: 72000
+							effect: "tombstone:aquatic_life"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Gillyweed!"
+			tasks: [
+				{
+					id: "5A4AB70999E75B4D"
+					item: "minecraft:conduit"
+					type: "item"
+				}
+				{
+					count: 8192L
+					id: "06972D122EAD25E6"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					amount: 1024000L
+					fluid: "minecraft:water"
+					id: "2AEFCBE55EC6740E"
+					type: "fluid"
+				}
+				{
+					consume_items: false
+					id: "525B5E5AA912243E"
+					item: {
+						Count: 1b
+						id: "minecraft:trident"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Gill Breather"
+			x: 9.5d
+			y: 6.0d
+		}
+		{
 			dependencies: [
 				"3C638E6AE980A5F9"
 				"4156E689D2498B45"
@@ -1036,14 +1030,20 @@
 				"5C27F180358AF7D9"
 				"09F90870190BD788"
 			]
-			size: 2.0d
+			icon: "botania:gaia_head"
 			id: "0239FD5E022A72A7"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Begin your search..."
 			tasks: [{
 				id: "5B8A23C53A2960C9"
-				type: "checkmark"
 				title: "Complete"
+				type: "checkmark"
 			}]
+			title: "Sufficiently Upgraded"
+			x: 10.5d
+			y: 3.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Player Upgrades"
 }

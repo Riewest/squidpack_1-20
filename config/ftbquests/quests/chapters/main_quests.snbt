@@ -1,288 +1,370 @@
 {
-	id: "31578F964009F538"
-	group: ""
-	order_index: 0
-	filename: "main_quests"
-	title: "Main Quests"
-	icon: "minecraft:end_portal_frame"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "main_quests"
+	group: ""
+	icon: "minecraft:end_portal_frame"
+	id: "31578F964009F538"
+	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
-			title: "The Black Box"
+			description: [
+				"Create an FTB Quests Task Screen, pipe in some water, and hopper in some cobble. "
+				""
+				"Use the FTB QTS to automate the submission of large quantities of items/fluids."
+				""
+				"You're gonna need it..."
+			]
 			icon: "ftbquests:screen_1"
-			x: 0.5d
-			y: 0.0d
-			description: ["Create an FTB Quests Task Screen to automate the submission of large quantities of items/fluids."]
 			id: "51993C48DBE853AA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "018E18D4143FCF71"
+				table_id: 5873972906088391538L
+				type: "choice"
+			}]
 			tasks: [
 				{
+					consume_items: false
 					id: "206FC6F75FDDFEB0"
-					type: "item"
 					item: "ftbquests:screen_1"
-				}
-				{
-					id: "5B539E48EE7C0437"
-					type: "fluid"
-					title: "First Fluid Submission"
-					fluid: "minecraft:water"
-					amount: 10000L
-				}
-				{
-					id: "4C22DFD797CCF7C2"
 					type: "item"
-					title: "Any #forge:cobblestone"
+				}
+				{
+					amount: 10000L
+					fluid: "minecraft:water"
+					id: "5B539E48EE7C0437"
+					title: "First Fluid Submission"
+					type: "fluid"
+				}
+				{
+					count: 512L
+					id: "33E6E19E0A9EB50D"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:cobblestone"
 						}
 					}
-					count: 512L
-					consume_items: true
+					title: "Any #forge:cobblestone"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "018E18D4143FCF71"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 5873972906088391538L
-			}]
+			title: "The Black Box"
+			x: 0.5d
+			y: 0.0d
 		}
 		{
-			title: "3-Headed Terror"
-			x: 2.5d
-			y: -0.5d
-			subtitle: "Wither Wither Chicken Dinner"
+			dependencies: ["51993C48DBE853AA"]
 			description: [
 				""
-				"You can't beat the game without fighting the scary boss."
+				"No skipping bosses in this pack. :)"
 				""
-				"Who do you think you are?"
 			]
-			dependencies: ["51993C48DBE853AA"]
 			id: "430BE30820C28D7C"
-			tasks: [{
-				id: "4F0AEAC302D34A7F"
-				type: "kill"
-				icon: "minecraft:wither_skeleton_skull"
-				entity: "minecraft:wither"
-				value: 1L
-			}]
 			rewards: [
 				{
-					id: "7960B2473A9220CA"
-					type: "item"
-					item: "minecraft:enchanted_golden_apple"
 					count: 2
+					id: "7960B2473A9220CA"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
 				}
 				{
-					id: "43AF6ABC3FD2EA5D"
-					type: "item"
-					item: "minecraft:cooked_chicken"
 					count: 32
+					id: "43AF6ABC3FD2EA5D"
+					item: "minecraft:cooked_chicken"
+					type: "item"
 				}
 				{
 					id: "6E87177CF3BAB0D3"
-					type: "item"
 					item: "bhc:yellow_heart_canister"
+					type: "item"
 				}
 			]
+			subtitle: "Wither Wither Chicken Dinner"
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "4F0AEAC302D34A7F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "3-Headed Terror"
+			x: 2.5d
+			y: -0.5d
 		}
 		{
-			title: "Prospector"
-			icon: "tuffores:tuff_ores_module"
-			x: 1.5d
-			y: -1.0d
-			subtitle: "Silk touch!"
-			description: ["Get a scanning module to scan for Tuff Ore veins! Tuff Ore veins are very rare and contain hundreds of thousands of ore chunks! They are extremely tough to mine. Mining should be automated with Create or other means."]
 			dependencies: ["51993C48DBE853AA"]
+			description: [
+				"Use the ores you've gathered to make a Scanning Module: Tuff Ores. Throw it in a scanner and use it to scan for Tuff Ore veins! "
+				""
+				"Tuff Ore veins are rare but contain hundreds of thousands of ore chunks! They are extremely tough to mine. Mining should be automated with Create or other means."
+				""
+				"Don't forget to charge your scanner!"
+			]
+			icon: "tuffores:tuff_ores_module"
 			id: "59E050BF164363F6"
+			rewards: [{
+				id: "0907626328061477"
+				type: "xp"
+				xp: 1000
+			}]
+			subtitle: "Silk touch!"
 			tasks: [
 				{
-					id: "40493C23CF9CA781"
-					type: "item"
-					title: "Any #forge:ores/coal"
+					consume_items: false
+					id: "0F5CCB8448D16253"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ores/coal"
 						}
 					}
+					title: "Any #forge:ores/iron"
+					type: "item"
 				}
 				{
-					id: "0F5CCB8448D16253"
-					type: "item"
-					title: "Any #forge:ores/iron"
+					consume_items: false
+					id: "73C9F04C14A33BCE"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ores/iron"
 						}
 					}
+					title: "Any #forge:ores/iron"
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "5FD7381A4DD82183"
-					type: "item"
-					title: "Any #forge:ores/copper"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ores/copper"
 						}
 					}
+					title: "Any #forge:ores/copper"
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "3B2223F3A1FC2E1B"
-					type: "item"
-					title: "Any #forge:ores/gold"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ores/gold"
 						}
 					}
+					title: "Any #forge:ores/gold"
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "0B201E3281C40031"
-					type: "item"
-					title: "Any #forge:ores/redstone"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ores/redstone"
 						}
 					}
+					title: "Any #forge:ores/redstone"
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "7488EE1ACEE50A97"
-					type: "item"
-					title: "Any #forge:ores/emerald"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ores/emerald"
 						}
 					}
+					title: "Any #forge:ores/emerald"
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "23AE6D7B34F17EEA"
-					type: "item"
-					title: "Any #forge:ores/lapis"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ores/lapis"
 						}
 					}
+					title: "Any #forge:ores/lapis"
+					type: "item"
 				}
 				{
+					consume_items: false
+					disable_toast: true
 					id: "22F3D5750867CCA5"
-					type: "item"
-					title: "Any #forge:ores/diamond"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ores/diamond"
 						}
 					}
+					title: "Any #forge:ores/diamond"
+					type: "item"
+				}
+				{
+					id: "455D53A7A8361921"
+					item: {
+						Count: 1b
+						id: "scannable:scanner"
+						tag: {
+							energy: 5000
+						}
+					}
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "3813CE1F9367A981"
-				type: "item"
-				item: "tuffores:tuff_ores_module"
-			}]
+			title: "Prospector"
+			x: 1.5d
+			y: -1.0d
 		}
 		{
-			title: "What!? No Strongholds?"
-			x: 4.5d
-			y: 0.0d
-			subtitle: "Fine, I'll do it Myself..."
-			description: ["Strongholds don't exist so you'll have to create your own End Portal."]
 			dependencies: [
 				"430BE30820C28D7C"
 				"61DBB3C6672677ED"
 			]
+			description: ["Strongholds don't exist so you'll have to create your own End Portal."]
 			id: "53FF2B6D648A8BDA"
-			tasks: [{
-				id: "4E4405A4DA6EBC34"
-				type: "item"
-				item: "minecraft:end_portal_frame"
-				count: 12L
-				consume_items: false
-			}]
 			rewards: [{
-				id: "4F7C80313E929BB7"
-				type: "item"
-				item: "minecraft:ender_eye"
 				count: 11
+				id: "4F7C80313E929BB7"
+				item: "minecraft:ender_eye"
+				type: "item"
 			}]
+			subtitle: "Fine, I'll do it Myself..."
+			tasks: [{
+				consume_items: false
+				count: 12L
+				id: "4E4405A4DA6EBC34"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			title: "What!? No Strongholds?"
+			x: 4.5d
+			y: 0.0d
 		}
 		{
-			title: "Blind Beasty"
-			icon: "minecraft:sculk_shrieker"
-			x: 2.5d
-			y: 0.5d
-			subtitle: "Step Softly"
-			description: ["Brave the darkness...   Good luck..."]
 			dependencies: ["51993C48DBE853AA"]
+			description: ["Brave the darkness...   Good luck..."]
+			icon: "minecraft:sculk_shrieker"
 			id: "61DBB3C6672677ED"
-			tasks: [{
-				id: "1A95C15CB4F7A7CC"
-				type: "kill"
-				icon: "minecraft:sculk_shrieker"
-				entity: "minecraft:warden"
-				value: 1L
-			}]
 			rewards: [
 				{
-					id: "4D9632A5995CF7BD"
-					type: "item"
-					item: "minecraft:enchanted_golden_apple"
 					count: 2
+					id: "4D9632A5995CF7BD"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
 				}
 				{
-					id: "07130DFE120B5600"
-					type: "item"
-					item: "minecraft:cooked_chicken"
 					count: 32
+					id: "07130DFE120B5600"
+					item: "minecraft:cooked_chicken"
+					type: "item"
 				}
 				{
 					id: "3585BB5935A26A41"
-					type: "item"
 					item: "bhc:yellow_heart_canister"
+					type: "item"
 				}
 			]
+			subtitle: "Step Softly"
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: "minecraft:sculk_shrieker"
+				id: "1A95C15CB4F7A7CC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Blind Beasty"
+			x: 2.5d
+			y: 0.5d
 		}
 		{
-			x: 6.5d
-			y: 0.0d
-			shape: "octagon"
-			dependencies: ["53FF2B6D648A8BDA"]
-			size: 2.0d
-			id: "3CFA2DDAC03DE4C0"
-			tasks: [{
-				id: "157F9744E8A9D348"
-				type: "item"
-				item: "kubejs:squid_god_tribute"
-			}]
+			id: "440A7926FDA7EABB"
 			rewards: [{
-				id: "5538578B6156DD49"
-				type: "command"
-				command: "/gamemode creative @p"
-				player_command: false
+				id: "7940C8DB401317DF"
+				item: {
+					Count: 1b
+					id: "eccentrictome:tome"
+					tag: {
+						"eccentrictome:mods": {
+							ae2: {
+								0: {
+									Count: 1b
+									id: "ae2:guide"
+								}
+							}
+							botania: {
+								0: {
+									Count: 1b
+									id: "botania:lexicon"
+								}
+							}
+							buildinggadgets2: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "buildinggadgets2:buildinggadgets2book"
+									}
+								}
+							}
+							cookingforblockheads: {
+								0: {
+									Count: 1b
+									id: "cookingforblockheads:recipe_book"
+								}
+							}
+							ftbquests: {
+								0: {
+									Count: 1b
+									id: "ftbquests:book"
+								}
+							}
+							irons_spellbooks: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "irons_spellbooks:iss_guide_book"
+									}
+								}
+							}
+							theoneprobe: {
+								0: {
+									Count: 1b
+									id: "theoneprobe:probenote"
+								}
+							}
+						}
+					}
+				}
+				type: "item"
 			}]
+			tasks: [{
+				id: "7C0D390573EE33B5"
+				title: "Book of Books"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Main Quests"
 }

@@ -1,12 +1,12 @@
 {
 	id: "51848B3C87AAE372"
-	order_index: 0
-	title: "other_soils"
 	loot_size: 1
+	order_index: 0
 	rewards: [
-		{ item: "minecraft:crimson_nylium", count: 32 }
-		{ item: "minecraft:warped_nylium", count: 32 }
-		{ item: "minecraft:coarse_dirt", count: 32 }
-		{ item: "minecraft:mycelium", count: 32 }
+		{ count: 32, item: "minecraft:crimson_nylium" }
+		{ count: 32, item: "minecraft:warped_nylium" }
+		{ count: 32, item: "minecraft:coarse_dirt" }
+		{ count: 32, item: "minecraft:mycelium" }
 	]
+	title: "other_soils"
 }

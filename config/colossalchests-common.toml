@@ -47,5 +47,5 @@
 
 	[machine.colossal_chest]
 		#The maximum size a colossal chest can have.
-		maxSize = 20
+		maxSize = 5
 

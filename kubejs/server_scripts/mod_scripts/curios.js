@@ -14,6 +14,7 @@ PlayerEvents.loggedIn( event => {
 
       event.server.runCommandSilent("curios add belt " + player_name)   //server runs a command that adds an aditional belt slot to the new player
       event.server.runCommandSilent("curios add ring " + player_name)   //server runs a command that adds an aditional ring slot to the new player
+      event.server.runCommandSilent("curios add ring " + player_name)   //server runs a command that adds an aditional ring slot to the new player
       //event.server.runCommandSilent("curios remove head " + player_name)//server runs a command that removes a head slot from the new player
 
                                                                         //List of preset slots at this link https://docs.illusivesoulworks.com/curios/preset-slots
