@@ -10,55 +10,6 @@
 	quests: [
 		{
 			description: [
-				"Create an FTB Quests Task Screen, pipe in some water, and hopper in some cobble. "
-				""
-				"Use the FTB QTS to automate the submission of large quantities of items/fluids."
-				""
-				"You're gonna need it..."
-			]
-			icon: "ftbquests:screen_1"
-			id: "51993C48DBE853AA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "018E18D4143FCF71"
-				table_id: 5873972906088391538L
-				type: "choice"
-			}]
-			tasks: [
-				{
-					consume_items: false
-					id: "206FC6F75FDDFEB0"
-					item: "ftbquests:screen_1"
-					type: "item"
-				}
-				{
-					amount: 10000L
-					fluid: "minecraft:water"
-					id: "5B539E48EE7C0437"
-					title: "First Fluid Submission"
-					type: "fluid"
-				}
-				{
-					count: 512L
-					id: "33E6E19E0A9EB50D"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:cobblestone"
-						}
-					}
-					title: "Any #forge:cobblestone"
-					type: "item"
-				}
-			]
-			title: "The Black Box"
-			x: 0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["51993C48DBE853AA"]
-			description: [
 				""
 				"No skipping bosses in this pack. :)"
 				""
@@ -77,11 +28,6 @@
 					item: "minecraft:cooked_chicken"
 					type: "item"
 				}
-				{
-					id: "6E87177CF3BAB0D3"
-					item: "bhc:yellow_heart_canister"
-					type: "item"
-				}
 			]
 			subtitle: "Wither Wither Chicken Dinner"
 			tasks: [{
@@ -92,17 +38,19 @@
 				value: 1L
 			}]
 			title: "3-Headed Terror"
-			x: 2.5d
-			y: -0.5d
+			x: 0.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["51993C48DBE853AA"]
 			description: [
 				"Use the ores you've gathered to make a Scanning Module: Tuff Ores. Throw it in a scanner and use it to scan for Tuff Ore veins! "
 				""
 				"Tuff Ore veins are rare but contain hundreds of thousands of ore chunks! They are extremely tough to mine. Mining should be automated with Create or other means."
 				""
 				"Don't forget to charge your scanner!"
+				""
+				""
+				"{image:kubejs:textures/info/tuff_ore_deposit.png width:200 height:200 align:1}"
 			]
 			icon: "tuffores:tuff_ores_module"
 			id: "59E050BF164363F6"
@@ -111,113 +59,8 @@
 				type: "xp"
 				xp: 1000
 			}]
-			subtitle: "Silk touch!"
+			subtitle: "Large Ore Deposits"
 			tasks: [
-				{
-					consume_items: false
-					id: "0F5CCB8448D16253"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/coal"
-						}
-					}
-					title: "Any #forge:ores/iron"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "73C9F04C14A33BCE"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/iron"
-						}
-					}
-					title: "Any #forge:ores/iron"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "5FD7381A4DD82183"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/copper"
-						}
-					}
-					title: "Any #forge:ores/copper"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "3B2223F3A1FC2E1B"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/gold"
-						}
-					}
-					title: "Any #forge:ores/gold"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "0B201E3281C40031"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/redstone"
-						}
-					}
-					title: "Any #forge:ores/redstone"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7488EE1ACEE50A97"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/emerald"
-						}
-					}
-					title: "Any #forge:ores/emerald"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "23AE6D7B34F17EEA"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/lapis"
-						}
-					}
-					title: "Any #forge:ores/lapis"
-					type: "item"
-				}
-				{
-					consume_items: false
-					disable_toast: true
-					id: "22F3D5750867CCA5"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/diamond"
-						}
-					}
-					title: "Any #forge:ores/diamond"
-					type: "item"
-				}
 				{
 					id: "455D53A7A8361921"
 					item: {
@@ -229,16 +72,17 @@
 					}
 					type: "item"
 				}
+				{
+					id: "49316DF9D3469272"
+					item: "tuffores:tuff_ores_module"
+					type: "item"
+				}
 			]
-			title: "Prospector"
-			x: 1.5d
-			y: -1.0d
+			title: "Tuff Ores"
+			x: -2.5d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"430BE30820C28D7C"
-				"61DBB3C6672677ED"
-			]
 			description: ["Strongholds don't exist so you'll have to create your own End Portal."]
 			id: "53FF2B6D648A8BDA"
 			rewards: [{
@@ -256,11 +100,10 @@
 				type: "item"
 			}]
 			title: "What!? No Strongholds?"
-			x: 4.5d
-			y: 0.0d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["51993C48DBE853AA"]
 			description: ["Brave the darkness...   Good luck..."]
 			icon: "minecraft:sculk_shrieker"
 			id: "61DBB3C6672677ED"
@@ -292,78 +135,124 @@
 				value: 1L
 			}]
 			title: "Blind Beasty"
-			x: 2.5d
-			y: 0.5d
+			x: -0.5d
+			y: 6.0d
 		}
 		{
-			id: "440A7926FDA7EABB"
-			rewards: [{
-				id: "7940C8DB401317DF"
-				item: {
-					Count: 1b
-					id: "eccentrictome:tome"
-					tag: {
-						"eccentrictome:mods": {
-							ae2: {
-								0: {
-									Count: 1b
-									id: "ae2:guide"
-								}
-							}
-							botania: {
-								0: {
-									Count: 1b
-									id: "botania:lexicon"
-								}
-							}
-							buildinggadgets2: {
-								0: {
-									Count: 1b
-									id: "patchouli:guide_book"
-									tag: {
-										"patchouli:book": "buildinggadgets2:buildinggadgets2book"
-									}
-								}
-							}
-							cookingforblockheads: {
-								0: {
-									Count: 1b
-									id: "cookingforblockheads:recipe_book"
-								}
-							}
-							ftbquests: {
-								0: {
-									Count: 1b
-									id: "ftbquests:book"
-								}
-							}
-							irons_spellbooks: {
-								0: {
-									Count: 1b
-									id: "patchouli:guide_book"
-									tag: {
-										"patchouli:book": "irons_spellbooks:iss_guide_book"
-									}
-								}
-							}
-							theoneprobe: {
-								0: {
-									Count: 1b
-									id: "theoneprobe:probenote"
-								}
-							}
-						}
-					}
+			description: ["Trains!"]
+			id: "68AD0BAA322DA766"
+			rewards: [
+				{
+					id: "480704363A1A8B29"
+					item: "create:track_station"
+					type: "item"
 				}
+				{
+					id: "752E5E93A53B2C87"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				count: 500L
+				id: "6AD6062B1DE05DC4"
+				item: "create:track"
 				type: "item"
 			}]
+			title: "Transcontinental Railroad"
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			id: "7F77A692D997C831"
+			rewards: [{
+				count: 8
+				id: "307D2617940649EC"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			subtitle: "But how to farm them?"
 			tasks: [{
-				id: "7C0D390573EE33B5"
-				title: "Book of Books"
+				consume_items: false
+				id: "3329A496CBA68ABC"
+				item: "minecraft:chorus_flower"
+				type: "item"
+			}]
+			title: "A Strange Purple Flower"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7F672DB8969C7968"
+				"01EFB8219AB288F6"
+				"1985B1B03E268A22"
+			]
+			icon: "minecraft:glow_squid_spawn_egg"
+			id: "7E2CB05DAF2641DB"
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				id: "54A1EC4A4B95A5F4"
+				title: "Complete!"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0239FD5E022A72A7"]
+			icon: "botania:gaia_head"
+			id: "01EFB8219AB288F6"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "14D45173028CCD74"
+				title: "Player Upgrades"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2F2FB7B760E164B3"
+				"243DA64A9A7395C1"
+			]
+			icon: "botania:dice"
+			id: "1985B1B03E268A22"
+			min_required_dependencies: 25
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "1AE322F58356FA36"
+				title: "Dynamic Questing"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"53FF2B6D648A8BDA"
+				"7F77A692D997C831"
+				"61DBB3C6672677ED"
+				"59E050BF164363F6"
+				"68AD0BAA322DA766"
+				"430BE30820C28D7C"
+			]
+			icon: "minecraft:grass_block"
+			id: "7F672DB8969C7968"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "648E456A57F04862"
+				title: "\"Main\" Quests"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
 		}
 	]
 	title: "Main Quests"

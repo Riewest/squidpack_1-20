@@ -51,13 +51,18 @@ JEIEvents.hideItems(event => {
         'scannable:rare_ores_module',
         'scannable:fluid_module',
         'scannable:chest_module',
-        'toms_storage:ts.inventory_cable',
-        'toms_storage:ts.inventory_cable_framed',
-        'toms_storage:ts.inventory_cable_connector',
-        'toms_storage:ts.inventory_cable_connector_filtered',
-        'toms_storage:ts.inventory_cable_connector_framed',
-        'toms_storage:ts.inventory_hopper_basic',
-        'toms_storage:ts.adv_wireless_terminal'
+        'sophisticatedbackpacks:diamond_backpack',
+        'sophisticatedbackpacks:netherite_backpack',
+        'sophisticatedbackpacks:gold_backpack',
+        'sophisticatedbackpacks:stack_upgrade_tier_1',
+        'sophisticatedbackpacks:stack_upgrade_tier_2',
+        'sophisticatedstorage:advanced_compacting_upgrade',
+        'sophisticatedbackpacks:stack_upgrade_tier_3',
+        'sophisticatedbackpacks:stack_upgrade_tier_4',
+        'sophisticatedbackpacks:advanced_compacting_upgrade',
+        'sophisticatedbackpacks:inception_upgrade',
+        'sophisticatedstorage:packing_tape',
+        'sophisticatedstorage:compression_upgrade'
     ])
 })
 

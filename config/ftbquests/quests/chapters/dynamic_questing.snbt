@@ -3,57 +3,18 @@
 	default_quest_shape: ""
 	filename: "dynamic_questing"
 	group: ""
+	icon: "botania:dice"
 	id: "085196B44E9F9D28"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Automatic Quest"]
-			id: "3B9B44C6EC3252D3"
-			invisible: true
-			shape: "square"
-			tasks: [{
-				id: "4942EC6DDCB7E7B6"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			title: "Vanilla-1"
-			x: 0.0d
-			y: -0.5d
-		}
-		{
-			description: ["Automatic Quest"]
-			id: "356FA6A9E292239B"
-			invisible: true
-			shape: "gear"
-			tasks: [{
-				id: "68AA069F33088A90"
-				item: "create:large_cogwheel"
-				type: "item"
-			}]
-			title: "Tech-1"
-			x: 0.0d
-			y: 1.0d
-		}
-		{
-			description: ["Automatic Quest"]
-			id: "73442A005404B5B8"
-			invisible: true
-			shape: "pentagon"
-			tasks: [{
-				id: "677C9AE6948FE2E7"
-				item: "botania:spark"
-				type: "item"
-			}]
-			title: "Magic-1"
-			x: 0.0d
-			y: 2.5d
-		}
-		{
+			dependencies: ["51993C48DBE853AA"]
 			description: ["Automatic Quest"]
 			id: "243DA64A9A7395C1"
 			shape: "square"
 			tasks: [{
+				count: 32L
 				id: "568085D2BD98667D"
 				item: "minecraft:cobblestone"
 				type: "item"
@@ -63,10 +24,12 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["51993C48DBE853AA"]
 			description: ["Automatic Quest"]
 			id: "2F2FB7B760E164B3"
 			shape: "gear"
 			tasks: [{
+				count: 32L
 				id: "53E1F9F30DB666C7"
 				item: "create:large_cogwheel"
 				type: "item"
@@ -76,17 +39,65 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["51993C48DBE853AA"]
 			description: ["Automatic Quest"]
 			id: "0025B3DF84E7AF31"
 			shape: "pentagon"
 			tasks: [{
-				id: "070A3DE97F82617C"
-				item: "botania:spark"
+				count: 32L
+				id: "4C19D2D71F918052"
+				item: "minecraft:glowstone_dust"
 				type: "item"
 			}]
 			title: "Magic-1"
 			x: 2.5d
 			y: 2.5d
+		}
+		{
+			description: [
+				"Create an FTB Quests Task Screen, pipe in some water, and hopper in some cobble. "
+				""
+				"Use the FTB QTS to automate the submission of large quantities of items/fluids."
+				""
+				"You're gonna need it..."
+			]
+			icon: "ftbquests:screen_1"
+			id: "51993C48DBE853AA"
+			rewards: [{
+				id: "773FB54BC8BCA6FF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "206FC6F75FDDFEB0"
+					item: "ftbquests:screen_1"
+					type: "item"
+				}
+				{
+					amount: 10000L
+					fluid: "minecraft:water"
+					id: "5B539E48EE7C0437"
+					type: "fluid"
+				}
+				{
+					count: 512L
+					id: "33E6E19E0A9EB50D"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:cobblestone"
+						}
+					}
+					title: "Any #forge:cobblestone"
+					type: "item"
+				}
+			]
+			title: "The Black Box"
+			x: 1.0d
+			y: 1.0d
 		}
 	]
 	title: "Dynamic Questing"

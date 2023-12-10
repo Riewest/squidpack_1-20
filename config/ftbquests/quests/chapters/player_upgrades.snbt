@@ -5,7 +5,7 @@
 	group: ""
 	icon: "colossalchests:upgrade_tool"
 	id: "0084D42791418EDA"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -53,7 +53,7 @@
 			]
 			title: "Light as a Feather"
 			x: 0.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			description: ["Pylon Upgrade: Luck V"]
@@ -126,8 +126,8 @@
 				}
 			]
 			title: "Leprechaun's Luck"
-			x: -1.0d
-			y: 1.5d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			description: ["Pylon Upgrade: Unstable Intangibility"]
@@ -236,7 +236,7 @@
 				}
 			]
 			title: "Unstable Intangibility"
-			x: 1.0d
+			x: -2.0d
 			y: 1.5d
 		}
 		{
@@ -265,8 +265,8 @@
 				type: "item"
 			}]
 			title: "Enchanced Eyesight"
-			x: 0.0d
-			y: 3.0d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			description: ["Pylon Upgrade: Invisibility"]
@@ -308,8 +308,8 @@
 				}
 			]
 			title: "The Invisible Man"
-			x: 2.0d
-			y: 3.0d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			description: ["Pylon Upgrade: Glowing"]
@@ -352,8 +352,8 @@
 				}
 			]
 			title: "You Glow Girl!"
-			x: -1.0d
-			y: 4.5d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			description: ["Pylon Upgrade: Hero of the Village"]
@@ -392,7 +392,7 @@
 			]
 			title: "Testificate Man"
 			x: 1.0d
-			y: 4.5d
+			y: -2.0d
 		}
 		{
 			description: ["Pylon Upgrade: Jump Boost"]
@@ -447,8 +447,8 @@
 				}
 			]
 			title: "Boing!"
-			x: 0.0d
-			y: 6.0d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			description: ["Upgrade: Crystal Belt +5 Hearts"]
@@ -487,8 +487,8 @@
 				}
 			]
 			title: "An Apple a Day..."
-			x: 8.5d
-			y: 1.5d
+			x: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["409347F163727A40"]
@@ -532,8 +532,8 @@
 				}
 			]
 			title: "Healing Aura"
-			x: 9.5d
-			y: 0.0d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
 			description: ["Pylon Upgrade: Resistance"]
@@ -609,8 +609,8 @@
 				}
 			]
 			title: "Thick Skinned"
-			x: 13.5d
-			y: 3.0d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			description: ["Pylon Upgrade: Strength"]
@@ -664,8 +664,8 @@
 				}
 			]
 			title: "Strong Man"
-			x: 11.5d
-			y: 6.0d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			description: [
@@ -735,8 +735,8 @@
 				}
 			]
 			title: "Endless Feast"
-			x: 12.5d
-			y: 4.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			description: ["Pylon Upgrade: Fire Resistance"]
@@ -788,8 +788,8 @@
 				}
 			]
 			title: "Fire Bender"
-			x: 12.5d
-			y: 1.5d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			description: ["Pylon Upgrade: Speed II"]
@@ -840,8 +840,8 @@
 				}
 			]
 			title: "I am, The Flash"
-			x: 7.5d
-			y: 3.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			description: ["Pylon Upgrade: Haste II"]
@@ -895,8 +895,8 @@
 				}
 			]
 			title: "True Dwarf"
-			x: 11.5d
-			y: 0.0d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			description: ["Pylon Upgrade: Dolphin's Grace"]
@@ -959,8 +959,8 @@
 				}
 			]
 			title: "Friend of Dolphins"
-			x: 8.5d
-			y: 4.5d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6F650BD60565651B"]
@@ -1016,8 +1016,8 @@
 				}
 			]
 			title: "Gill Breather"
-			x: 9.5d
-			y: 6.0d
+			x: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1029,9 +1029,18 @@
 				"5D9BCFBD11106B26"
 				"5C27F180358AF7D9"
 				"09F90870190BD788"
+				"43351B26BA94E462"
+				"6D77AFF9B7AA63BE"
+				"0692F68D3597B733"
+				"7FC6D42141C89B49"
+				"68E20FE92F0CA703"
+				"3814B8FACBF35621"
+				"0C79813060B87278"
+				"72704A9AA6B905C5"
 			]
 			icon: "botania:gaia_head"
 			id: "0239FD5E022A72A7"
+			min_required_dependencies: 5
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Begin your search..."
@@ -1041,8 +1050,8 @@
 				type: "checkmark"
 			}]
 			title: "Sufficiently Upgraded"
-			x: 10.5d
-			y: 3.0d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "Player Upgrades"

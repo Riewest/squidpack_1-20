@@ -5,7 +5,7 @@
 	group: ""
 	icon: "tradingpost:trading_post"
 	id: "05EC07ED3E3154EC"
-	order_index: 1
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -82,20 +82,12 @@
 				table_id: 2832228962135375950L
 				type: "choice"
 			}]
-			tasks: [
-				{
-					consume_items: false
-					id: "7C1184DC1805F530"
-					item: "create:mechanical_saw"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "2BEA3EDCCB7A40B7"
-					item: "create:hand_crank"
-					type: "item"
-				}
-			]
+			tasks: [{
+				consume_items: false
+				id: "7C1184DC1805F530"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
 			x: 1.5d
 			y: -1.0d
 		}
@@ -378,22 +370,81 @@
 			y: 4.0d
 		}
 		{
-			id: "7F77A692D997C831"
+			icon: {
+				Count: 1b
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
+			id: "440A7926FDA7EABB"
 			rewards: [{
-				count: 8
-				id: "307D2617940649EC"
-				item: "ae2:silicon"
+				id: "7940C8DB401317DF"
+				item: {
+					Count: 1b
+					id: "eccentrictome:tome"
+					tag: {
+						"eccentrictome:mods": {
+							ae2: {
+								0: {
+									Count: 1b
+									id: "ae2:guide"
+								}
+							}
+							botania: {
+								0: {
+									Count: 1b
+									id: "botania:lexicon"
+								}
+							}
+							buildinggadgets2: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "buildinggadgets2:buildinggadgets2book"
+									}
+								}
+							}
+							cookingforblockheads: {
+								0: {
+									Count: 1b
+									id: "cookingforblockheads:recipe_book"
+								}
+							}
+							ftbquests: {
+								0: {
+									Count: 1b
+									id: "ftbquests:book"
+								}
+							}
+							irons_spellbooks: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "irons_spellbooks:iss_guide_book"
+									}
+								}
+							}
+							theoneprobe: {
+								0: {
+									Count: 1b
+									id: "theoneprobe:probenote"
+								}
+							}
+						}
+					}
+				}
 				type: "item"
 			}]
-			subtitle: "But how to farm them?"
+			shape: "rsquare"
 			tasks: [{
-				consume_items: false
-				id: "3329A496CBA68ABC"
-				item: "minecraft:chorus_flower"
-				type: "item"
+				id: "7C0D390573EE33B5"
+				title: "Book of Books"
+				type: "checkmark"
 			}]
-			title: "A Strange Purple Flower"
-			x: 3.0d
+			x: -3.0d
 			y: 0.0d
 		}
 	]
