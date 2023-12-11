@@ -10,7 +10,7 @@
 	quests: [
 		{
 			dependencies: ["51993C48DBE853AA"]
-			description: ["Automatic Quest"]
+			description: ["Dynamic Quest"]
 			id: "243DA64A9A7395C1"
 			shape: "square"
 			tasks: [{
@@ -25,7 +25,7 @@
 		}
 		{
 			dependencies: ["51993C48DBE853AA"]
-			description: ["Automatic Quest"]
+			description: ["Dynamic Quest"]
 			id: "2F2FB7B760E164B3"
 			shape: "gear"
 			tasks: [{
@@ -40,7 +40,7 @@
 		}
 		{
 			dependencies: ["51993C48DBE853AA"]
-			description: ["Automatic Quest"]
+			description: ["Dynamic Quest"]
 			id: "0025B3DF84E7AF31"
 			shape: "pentagon"
 			tasks: [{
