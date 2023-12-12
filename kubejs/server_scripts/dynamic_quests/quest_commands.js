@@ -116,6 +116,7 @@ function addFluid(pool, player, fluid, amount){
     let fluidtask = createTask(TaskTypes.FluidTask.id, fluidData)
     addPool(pool, fluidtask, compare_string)
     messagePlayer(player, `Added Fluid: ${pool} ${fluid} ${amount}`)
+    return 1
 }
 
 function addEnergy(pool, player, amount){
@@ -125,4 +126,5 @@ function addEnergy(pool, player, amount){
     let energyTask = createTask(TaskTypes.ForgeEnergyTask.id, energyData)
     addPool(pool, energyTask, compare_string)
     messagePlayer(player, `Added Fluid: ${pool} energy ${amount}`)
+    return 1
 }
