@@ -1,0 +1,42 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intro"
+	group: ""
+	icon: "botania:cosmetic_questgiver_mark"
+	id: "35BD137497F8D5E9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"What you should know:"
+			""
+			"  -This pack was created with the idea that moving rapidly is very difficult. There is &cno /tpa, /home, /back,&r and very few methods of teleport items and players. Be creative and use the mods that are available."
+			""
+			"  -&cEnd portals do not spawn!&r A recipe for end portal frames has been added."
+			""
+			"  -While vanilla ore generation is enabled, some quests require more materials than would be feasible to mine manually. Make yourself a scanner and &asearch for tuff ore deposits&r. They contain vast amounts of ore but are very difficult to mine. "
+			""
+			"  - Dynamic Questing! We've scripted &arandomised end-game quests&r that scale as you go and are different everytime you play the pack. How far can you go?"
+			""
+			"Checkmark this quest to get started!"
+		]
+		icon: "botania:cosmetic_questgiver_mark"
+		id: "5A42C8470CC350E9"
+		rewards: [{
+			id: "60F417AA5091F3E6"
+			type: "xp"
+			xp: 50
+		}]
+		shape: "rsquare"
+		size: 2.0d
+		tasks: [{
+			id: "39002F6290EACCA4"
+			title: "Begin your Journey!"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Intro"
+}

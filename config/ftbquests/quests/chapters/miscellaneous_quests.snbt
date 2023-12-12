@@ -5,10 +5,11 @@
 	group: ""
 	icon: "tradingpost:trading_post"
 	id: "05EC07ED3E3154EC"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			description: [
 				"Craft a Synchronous Switch and set it's channel with named paper."
 				""
@@ -48,6 +49,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			description: ["This is worse than the Dirt Chest 9000!"]
 			id: "09D780D293808DAD"
 			rewards: [
@@ -74,6 +76,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			icon: "create:mechanical_saw"
 			id: "0726CBFAFF030C96"
 			rewards: [{
@@ -92,6 +95,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			description: ["Research entity shrinking."]
 			id: "603AD93261BD5E85"
 			rewards: [{
@@ -117,6 +121,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["5A42C8470CC350E9"]
 			description: ["Is it really worth it?"]
 			icon: {
 				Count: 1b
@@ -180,6 +185,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			icon: "botania:orange_mystical_flower"
 			id: "223EBD21095A3513"
 			rewards: [
@@ -287,6 +293,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["5A42C8470CC350E9"]
 			description: ["Easier trading."]
 			icon: "tradingpost:trading_post"
 			id: "61C41EA914E9E335"

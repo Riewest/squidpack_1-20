@@ -5,10 +5,11 @@
 	group: ""
 	icon: "minecraft:end_portal_frame"
 	id: "31578F964009F538"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			description: [
 				""
 				"No skipping bosses in this pack. :)"
@@ -42,6 +43,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			description: [
 				"Use the ores you've gathered to make a Scanning Module: Tuff Ores. Throw it in a scanner and use it to scan for Tuff Ore veins! "
 				""
@@ -83,14 +85,28 @@
 			y: 4.5d
 		}
 		{
-			description: ["Strongholds don't exist so you'll have to create your own End Portal."]
+			dependencies: ["5A42C8470CC350E9"]
+			description: [
+				"&l&cEnd portals DO NOT generate!&r&r"
+				"You'll have to craft some frames and make your own."
+				""
+				""
+				"{image:kubejs:textures/info/no_end_portal.png width:200 height:200 align:1}"
+			]
 			id: "53FF2B6D648A8BDA"
-			rewards: [{
-				count: 11
-				id: "4F7C80313E929BB7"
-				item: "minecraft:ender_eye"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "4F7C80313E929BB7"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					id: "7C9D5C7E263C1356"
+					type: "xp"
+					xp: 376
+				}
+			]
 			subtitle: "Fine, I'll do it Myself..."
 			tasks: [{
 				consume_items: false
@@ -99,11 +115,12 @@
 				item: "minecraft:end_portal_frame"
 				type: "item"
 			}]
-			title: "What!? No Strongholds?"
+			title: "What!? No End Portals?"
 			x: 1.5d
 			y: 5.5d
 		}
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			description: ["Brave the darkness...   Good luck..."]
 			icon: "minecraft:sculk_shrieker"
 			id: "61DBB3C6672677ED"
@@ -139,6 +156,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			description: ["Trains!"]
 			id: "68AD0BAA322DA766"
 			rewards: [
@@ -165,6 +183,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["5A42C8470CC350E9"]
 			id: "7F77A692D997C831"
 			rewards: [{
 				count: 8
@@ -205,6 +224,11 @@
 			dependencies: ["0239FD5E022A72A7"]
 			icon: "botania:gaia_head"
 			id: "01EFB8219AB288F6"
+			rewards: [{
+				id: "5838734C1AF8F57F"
+				type: "xp"
+				xp: 1000
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -223,6 +247,11 @@
 			icon: "botania:dice"
 			id: "1985B1B03E268A22"
 			min_required_dependencies: 25
+			rewards: [{
+				id: "75D130DB4D333087"
+				type: "xp"
+				xp: 1000
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -244,6 +273,11 @@
 			]
 			icon: "minecraft:grass_block"
 			id: "7F672DB8969C7968"
+			rewards: [{
+				id: "2A49B897626598B5"
+				type: "xp"
+				xp: 1000
+			}]
 			shape: "octagon"
 			size: 2.0d
 			tasks: [{
