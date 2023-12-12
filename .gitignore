@@ -48,3 +48,5 @@ servers.dat_old
 servers.dat
 prettypipesprefs
 screenshots
+config/ftbquests/quests/chapters/quest_test.snbt
+kubejs/server_scripts/dynamic_quests/pools_test.json

@@ -1,18 +1,15 @@
 const QuestObjectType = Java.loadClass('dev.ftb.mods.ftbquests.quest.QuestObjectType')
-const ItemTask = Java.loadClass('dev.ftb.mods.ftbquests.quest.task.ItemTask')
+const FTBTaskTypes = Java.loadClass('dev.ftb.mods.ftbquests.quest.task.TaskTypes')
 const Tristate = Java.loadClass('dev.ftb.mods.ftblibrary.config.Tristate')
 const Quest = Java.loadClass('dev.ftb.mods.ftbquests.quest.Quest')
+const CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
+const ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
+const StringTag = Java.loadClass('net.minecraft.nbt.StringTag')
 
 // Keys should be scoreboard name
 // Reading the contents of the file from the given path
-const items = JsonIO.read('kubejs/server_scripts/dynamic_quests/pools.json')
-// Writing to an existing/new file
-// JsonIO.write('kubejs/config/myawesomeconfig.json', {settinga: 'creeper', weirdblock: 'minecraft:end_gateway'})
+const pools = JsonIO.read('kubejs/server_scripts/dynamic_quests/pools.json')
 
-function getRandomString(array) {
-    const randomIndex = Math.floor(Math.random() * array.length);
-    return array[randomIndex];
-}
 
 // This function is like a contructor on a class
 // it is just parsing out info from the java classes
@@ -51,6 +48,80 @@ function addScore(event, team_name, scoreboard, score) {
     event.server.runCommandSilent(scoreCMD);
 }
 
+function getRandomTaskKey(pool) {
+    var keys = Object.keys(pool);
+    let randomIndex = Math.floor(Math.random() * keys.length);
+    let taskKey = keys[randomIndex]
+    return taskKey
+}
+
+
+function getOldTaskModifier(oldTask){
+
+    let oldTags = oldTask.getTags()
+    let pool_key_tag = oldTags.find(tag => tag.includes("dq_pool"))
+    let task_key_tag = oldTags.find(tag => tag.includes("dq_task_key"))
+
+    if(!(pool_key_tag || task_key_tag)){ return 1 }
+
+    let pool_key = pool_key_tag.split(":")[1]
+    let task_key = task_key_tag.split(":")[1]
+    let oldTaskDef = pools[pool_key][task_key] || {type: TaskTypes.ItemTask.id}
+    switch (oldTaskDef.type) {
+        case TaskTypes.ForgeEnergyTask.id:
+            return oldTaskDef.data
+        case TaskTypes.FluidTask.id:
+            return oldTaskDef.data.amount;
+
+            // ItemTask and Default are the same this will fall into block below
+        case TaskTypes.ItemTask.id:
+        default:
+            return 1;
+            
+    }
+}
+
+function safeNumber(number){
+    if(number > Number.MAX_SAFE_INTEGER){
+        return Number.MAX_SAFE_INTEGER
+    }
+    return number
+}
+
+function getNewTask(pool, newId, newQuest, oldTask){
+    let taskKey = getRandomTaskKey(pools[pool])
+    let randomTask = pools[pool][taskKey]
+    let oldModifier = getOldTaskModifier(oldTask)
+    let newCount = (oldTask.getMaxProgress() / oldModifier) * 2
+    let cTag = new CompoundTag();
+    let tagList = new ListTag();
+    tagList.add(StringTag.valueOf(`dq_pool:${pool}`))
+    tagList.add(StringTag.valueOf(`dq_task_key:${taskKey}`))
+    cTag.put("tags", tagList)
+    
+    switch (randomTask.type) { //types are defined in quest_command.js
+        case TaskTypes.ForgeEnergyTask.id:
+            let energytask = new TaskTypes.ForgeEnergyTask.object(newId, newQuest)
+            energytask.readData(cTag);
+            energytask.setValue(safeNumber(newCount * randomTask.data))
+            return energytask
+        case TaskTypes.FluidTask.id:
+            let fluidtask = new TaskTypes.FluidTask.object(newId, newQuest)
+            
+            cTag.putLong("amount", safeNumber(newCount * randomTask.data.amount));
+            fluidtask.readData(cTag);
+            fluidtask.setFluid(randomTask.data.name)
+            return fluidtask;
+
+            // ItemTask and Default are the same this will fall into block below
+        case TaskTypes.ItemTask.id:
+        default:
+            let itemtask = new TaskTypes.ItemTask.object(newId, newQuest)
+            itemtask.readData(cTag);
+            itemtask.setStackAndCount(randomTask.data, safeNumber(newCount))
+            return itemtask;
+    }
+}
 
 function firstCompletion(dQuest, event) {
     console.log("First Completion")
@@ -68,11 +139,8 @@ function firstCompletion(dQuest, event) {
     newQuest.addDependency(quest)
 
     let tasks = quest.getTasksAsList()
-    let task = tasks[0]
-    let newTask = new ItemTask(questfile.newID(), newQuest)
-    let newCount = task.getMaxProgress() * 2
-    let newItem = getRandomString(items[pool])
-    newTask.setStackAndCount(newItem, newCount)
+    let oldTask = tasks[0]
+    let newTask = getNewTask(pool, questfile.newID(), newQuest, oldTask)
     newQuest.addTask(newTask)
     chapter.addQuest(newQuest)
 
@@ -105,7 +173,7 @@ function firstCompletion(dQuest, event) {
             "color": "gold",
             "hoverEvent": {
                 "action": "show_text",
-                "contents": `${task.getMaxProgress()} - ${task.getItemStack().getItem()}`
+                "contents": oldTask.getAltTitle().getString()
             }
         },
         {
@@ -117,7 +185,7 @@ function firstCompletion(dQuest, event) {
             "color": "#32FBFF",
             "hoverEvent": {
                 "action": "show_text",
-                "contents": `${newTask.getMaxProgress()} - ${newTask.getItemStack().getItem()}`
+                "contents": newTask.getAltTitle().getString()
             }
         }
     ]
@@ -155,82 +223,3 @@ FTBQuestsEvents.completed(event => {
     }
 }
 )
-
-
-
-
-
-
-
-
-// const items = {
-//     vanilla: [
-//             'minecraft:oak_log',
-//             'minecraft:stone',
-//             'minecraft:cobblestone',
-//             'minecraft:obsidian',
-//             'minecraft:poppy',
-//             'minecraft:bamboo',
-//             'minecraft:cactus',
-//             'minecraft:sugar_cane',
-//             'minecraft:kelp',
-//             'minecraft:redstone',
-//             'minecraft:torch',
-//             'minecraft:dispenser',
-//             'minecraft:furnace',
-//             'minecraft:lightning_rod',
-//             Item.of('minecraft:diamond_pickaxe','{Damage:0}'),
-//             'minecraft:spyglass',
-//             'minecraft:golden_carrot',
-//             'minecraft:cake',
-//             'minecraft:cherry_stairs',
-//             'minecraft:mossy_stone_brick_wall',
-//             'minecraft:soul_sand',
-//             'minecraft:bone_block',
-//             'minecraft:piston',
-//             'minecraft:tnt',
-//             'minecraft:egg',
-//             'minecraft:popped_chorus_fruit',
-//             'minecraft:apple'],
-//     magic: [
-//             Item.of('irons_spellbooks:iron_spell_book','{ISB_spellbook:{activeSpellIndex:-1,spellSlots:5,spells:[]}}'),
-//             'createsweetsandtreets:purple_rock_candy',
-//             'create_sa:heap_of_experience',
-//             'advancedperipherals:weak_automata_core',
-//             Item.of('minecraft:potion','{Potion:"minecraft:night_vision"}'),
-//             'minecraft:beacon',
-//             'minecraft:enchanting_table',
-//             'irons_spellbooks:greater_oakskin_elixir',
-//             'botania:fertilizer',
-//             'botania:spark',
-//             Item.of('botania:brew_flask','{brewKey:"botania:feather_feet"}'),
-//             'botania:mana_pylon',
-//             'botania:white_shiny_flower',
-//             'botania:dreamwood_twig',
-//             'minecraft:glow_berries',
-//             'botania:tiny_potato',
-//             'botania:mana_powder',
-//             'botania:livingwood_twig',
-//             'botania:grass_seeds'],
-//     tech: [
-//             'computercraft:computer_normal',
-//             'computercraft:computer_advanced',
-//             Item.of('computercraft:turtle_normal', '{RightUpgrade:"minecraft:diamond_pickaxe",RightUpgradeNbt:{Tag:{Damage:0}}}'),
-//             Item.of('computercraft:turtle_advanced', '{RightUpgrade:"minecraft:diamond_sword",RightUpgradeNbt:{Tag:{Damage:0}}}'),
-//             'create:gearbox',
-//             'create:mechanical_drill',
-//             'createbigcannons:cast_iron_block',
-//             'create:fluid_pipe',
-//             'create:track',
-//             'ae2:logic_processor',
-//             'create:electron_tube',
-//             'create:precision_mechanism',
-//             'ae2:calculation_processor',
-//             'ae2:engineering_processor',
-//             'ae2:molecular_assembler',
-//             'createaddition:tesla_coil',
-//             'create_sa:brass_drone_item',
-//             'create_sa:flamethrower',
-//             'littlelogistics:energy_tug',
-//             'simplemagnets:advancedmagnet']
-// }

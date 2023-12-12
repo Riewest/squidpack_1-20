@@ -1,92 +1,34 @@
 {
-    "test": [
-            "minecraft:oak_log",
-            "minecraft:stone",
-            "minecraft:cobblestone",
-            "minecraft:obsidian",
-            "minecraft:poppy",
-            "minecraft:bamboo",
-            "minecraft:cactus",
-            "minecraft:sugar_cane",
-            "minecraft:kelp",
-            "minecraft:redstone",
-            "minecraft:torch",
-            "minecraft:dispenser",
-            "minecraft:furnace",
-            "minecraft:lightning_rod",
-            "minecraft:spyglass",
-            "minecraft:golden_carrot",
-            "minecraft:cake",
-            "minecraft:cherry_stairs",
-            "minecraft:mossy_stone_brick_wall",
-            "minecraft:soul_sand",
-            "minecraft:bone_block",
-            "minecraft:piston",
-            "minecraft:tnt",
-            "minecraft:egg",
-            "minecraft:popped_chorus_fruit",
-            "minecraft:apple"],
-    "vanilla": [
-            "minecraft:oak_log",
-            "minecraft:stone",
-            "minecraft:cobblestone",
-            "minecraft:obsidian",
-            "minecraft:poppy",
-            "minecraft:bamboo",
-            "minecraft:cactus",
-            "minecraft:sugar_cane",
-            "minecraft:kelp",
-            "minecraft:redstone",
-            "minecraft:torch",
-            "minecraft:dispenser",
-            "minecraft:furnace",
-            "minecraft:lightning_rod",
-            "minecraft:spyglass",
-            "minecraft:golden_carrot",
-            "minecraft:cake",
-            "minecraft:cherry_stairs",
-            "minecraft:mossy_stone_brick_wall",
-            "minecraft:soul_sand",
-            "minecraft:bone_block",
-            "minecraft:piston",
-            "minecraft:tnt",
-            "minecraft:egg",
-            "minecraft:popped_chorus_fruit",
-            "minecraft:apple"],
-    "magic": [
-            "createsweetsandtreets:purple_rock_candy",
-            "create_sa:heap_of_experience",
-            "advancedperipherals:weak_automata_core",
-            "minecraft:beacon",
-            "minecraft:enchanting_table",
-            "irons_spellbooks:greater_oakskin_elixir",
-            "botania:fertilizer",
-            "botania:spark",
-            "botania:mana_pylon",
-            "botania:white_shiny_flower",
-            "botania:dreamwood_twig",
-            "minecraft:glow_berries", 
-            "botania:tiny_potato", 
-            "botania:mana_powder", 
-            "botania:livingwood_twig", 
-            "botania:grass_seeds"],
-    "tech": [
-            "computercraft:computer_normal",
-            "computercraft:computer_advanced",
-            "create:gearbox",
-            "create:mechanical_drill",
-            "createbigcannons:cast_iron_block",
-            "create:fluid_pipe",
-            "create:track",
-            "ae2:logic_processor",
-            "create:electron_tube",
-            "create:precision_mechanism",
-            "ae2:calculation_processor",
-            "ae2:engineering_processor",
-            "ae2:molecular_assembler",
-            "createaddition:tesla_coil",
-            "create_sa:brass_drone_item",
-            "create_sa:flamethrower",
-            "littlelogistics:energy_tug",
-            "simplemagnets:advancedmagnet"]
-    }
+	"tech": {
+		"turtle_advanced-count1bidcomputercraftturtle_advancedtagrightupgrademinecraftdiamond_pickaxerightupgradenbttagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "computercraft:turtle_advanced",
+				"count": 1,
+				"nbt": "{RightUpgrade:\"minecraft:diamond_pickaxe\",RightUpgradeNbt:{Tag:{Damage:0}}}"
+			}
+		},
+		"forgeenergytask-1000": {
+			"type": "ForgeEnergyTask",
+			"data": 1000
+		}
+	},
+	"magic": {
+		"manasteel_ingot-count1bidbotaniamanasteel_ingot": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:manasteel_ingot",
+				"count": 1
+			}
+		}
+	},
+	"vanilla": {
+		"minecraftfluid-1000": {
+			"type": "FluidTask",
+			"data": {
+				"name": "minecraft:fluid",
+				"amount": 1000
+			}
+		}
+	}
+}
