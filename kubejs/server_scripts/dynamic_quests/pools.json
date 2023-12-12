@@ -11,6 +11,521 @@
 		"forgeenergytask-1000": {
 			"type": "ForgeEnergyTask",
 			"data": 1000
+		},
+		"pair_of_cannon_wheels-count1bidcreatebigcannonspair_of_cannon_wheels": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createbigcannons:pair_of_cannon_wheels",
+				"count": 1
+			}
+		},
+		"empty_autocannon_cartridge-count1bidcreatebigcannonsempty_autocannon_cartridge": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createbigcannons:empty_autocannon_cartridge",
+				"count": 1
+			}
+		},
+		"timed_fuze-count1bidcreatebigcannonstimed_fuzetagfuzetimer20": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createbigcannons:timed_fuze",
+				"count": 1,
+				"nbt": "{FuzeTimer:20}"
+			}
+		},
+		"speaker-count1bidcomputercraftspeaker": {
+			"type": "ItemTask",
+			"data": {
+				"item": "computercraft:speaker",
+				"count": 1
+			}
+		},
+		"coloredpartitemorange_smart_dense_cable-count1bidae2orange_smart_dense_cable": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:orange_smart_dense_cable",
+				"count": 1
+			}
+		},
+		"pattern_provider-count1bidae2pattern_provider": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:pattern_provider",
+				"count": 1
+			}
+		},
+		"materialitemcalculation_processor-count1bidae2calculation_processor": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:calculation_processor",
+				"count": 1
+			}
+		},
+		"materialitemlogic_processor-count1bidae2logic_processor": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:logic_processor",
+				"count": 1
+			}
+		},
+		"vault_component-count1bidcreate_savault_component": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_sa:vault_component",
+				"count": 1
+			}
+		},
+		"polished_rose_quartz-count1bidcreatepolished_rose_quartz": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:polished_rose_quartz",
+				"count": 1
+			}
+		},
+		"steam_whistle-count1bidcreatesteam_whistle": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:steam_whistle",
+				"count": 1
+			}
+		},
+		"mechanical_pump-count1bidcreatemechanical_pump": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:mechanical_pump",
+				"count": 1
+			}
+		},
+		"track-count1bidcreatetrack": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:track",
+				"count": 1
+			}
+		},
+		"oak_window-count1bidmcwwindowsoak_window": {
+			"type": "ItemTask",
+			"data": {
+				"item": "mcwwindows:oak_window",
+				"count": 1
+			}
+		},
+		"purple_sofa-count1bidcfmpurple_sofa": {
+			"type": "ItemTask",
+			"data": {
+				"item": "cfm:purple_sofa",
+				"count": 1
+			}
+		},
+		"upgrade_base-count1bidsophisticatedstorageupgrade_base": {
+			"type": "ItemTask",
+			"data": {
+				"item": "sophisticatedstorage:upgrade_base",
+				"count": 1
+			}
+		},
+		"tiny_piston-count1bidtinyredstonetiny_piston": {
+			"type": "ItemTask",
+			"data": {
+				"item": "tinyredstone:tiny_piston",
+				"count": 1
+			}
+		},
+		"smithing_table-count1bidcrafting_on_a_sticksmithing_table": {
+			"type": "ItemTask",
+			"data": {
+				"item": "crafting_on_a_stick:smithing_table",
+				"count": 1
+			}
+		},
+		"high_extraction_module-count1bidprettypipeshigh_extraction_module": {
+			"type": "ItemTask",
+			"data": {
+				"item": "prettypipes:high_extraction_module",
+				"count": 1
+			}
+		},
+		"camera-count1bidcameracameratagactive0b": {
+			"type": "ItemTask",
+			"data": {
+				"item": "camera:camera",
+				"count": 1,
+				"nbt": "{active:0b}"
+			}
+		},
+		"redstone_contact-count1bidcreateredstone_contact": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:redstone_contact",
+				"count": 1
+			}
+		},
+		"copper_diving_helmet-count1bidcreatecopper_diving_helmettagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:copper_diving_helmet",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"flywheel-count1bidcreateflywheel": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:flywheel",
+				"count": 1
+			}
+		},
+		"encased_fan-count1bidcreateencased_fan": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:encased_fan",
+				"count": 1
+			}
+		},
+		"copper_casing-count1bidcreatecopper_casing": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:copper_casing",
+				"count": 1
+			}
+		},
+		"minecart_coupling-count1bidcreateminecart_coupling": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:minecart_coupling",
+				"count": 1
+			}
+		},
+		"andesite_tunnel-count1bidcreateandesite_tunnel": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:andesite_tunnel",
+				"count": 1
+			}
+		},
+		"chute-count1bidcreatechute": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:chute",
+				"count": 1
+			}
+		},
+		"display_board-count1bidcreatedisplay_board": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:display_board",
+				"count": 1
+			}
+		},
+		"mechanical_arm-count1bidcreatemechanical_arm": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:mechanical_arm",
+				"count": 1
+			}
+		},
+		"charger-count1bidae2charger": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:charger",
+				"count": 1
+			}
+		},
+		"materialitemengineering_processor-count1bidae2engineering_processor": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:engineering_processor",
+				"count": 1
+			}
+		},
+		"chemical_sprayer-count1bidcreatedieselgeneratorschemical_sprayer": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createdieselgenerators:chemical_sprayer",
+				"count": 1
+			}
+		},
+		"lighter-count1bidcreatedieselgeneratorslighter": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createdieselgenerators:lighter",
+				"count": 1
+			}
+		},
+		"connector-count1bidcreateadditionconnector": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createaddition:connector",
+				"count": 1
+			}
+		},
+		"electric_motor-count1bidcreateadditionelectric_motor": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createaddition:electric_motor",
+				"count": 1
+			}
+		},
+		"multipistonblock-count1bidmultipistonmultipistonblock": {
+			"type": "ItemTask",
+			"data": {
+				"item": "multipiston:multipistonblock",
+				"count": 1
+			}
+		},
+		"cobblestone_dumble_paving-count1bidmcwpathscobblestone_dumble_paving": {
+			"type": "ItemTask",
+			"data": {
+				"item": "mcwpaths:cobblestone_dumble_paving",
+				"count": 1
+			}
+		},
+		"festive_lantern-count1bidmcwlightsfestive_lantern": {
+			"type": "ItemTask",
+			"data": {
+				"item": "mcwlights:festive_lantern",
+				"count": 1
+			}
+		},
+		"stripped_oak_glass_table-count1bidmcwfurnituresstripped_oak_glass_table": {
+			"type": "ItemTask",
+			"data": {
+				"item": "mcwfurnitures:stripped_oak_glass_table",
+				"count": 1
+			}
+		},
+		"cooking_pot-count1bidcroptopiacooking_pot": {
+			"type": "ItemTask",
+			"data": {
+				"item": "croptopia:cooking_pot",
+				"count": 1
+			}
+		},
+		"brass_fluid_valve-count1bidtfmgbrass_fluid_valve": {
+			"type": "ItemTask",
+			"data": {
+				"item": "tfmg:brass_fluid_valve",
+				"count": 1
+			}
+		},
+		"basic_solar_heating_plate-count1bidcreate_new_agebasic_solar_heating_plate": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_new_age:basic_solar_heating_plate",
+				"count": 1
+			}
+		},
+		"leather_backtank-count1bidcreategogglesleather_backtanktag": {
+			"type": "ItemTask",
+			"data": {
+				"item": "creategoggles:leather_backtank",
+				"count": 1,
+				"nbt": "{}"
+			}
+		},
+		"drone_controller-count1bidcreate_sadrone_controllertagtagaction0btagreach00d": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_sa:drone_controller",
+				"count": 1,
+				"nbt": "{tagAction:0b,tagReach:0.0d}"
+			}
+		},
+		"tiny_tnt-count1bidae2tiny_tnt": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:tiny_tnt",
+				"count": 1
+			}
+		},
+		"molecular_assembler-count1bidae2molecular_assembler": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:molecular_assembler",
+				"count": 1
+			}
+		},
+		"player_detector-count1bidadvancedperipheralsplayer_detector": {
+			"type": "ItemTask",
+			"data": {
+				"item": "advancedperipherals:player_detector",
+				"count": 1
+			}
+		},
+		"crossbow-count1bidminecraftcrossbowtagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:crossbow",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"coloredpartitemfluix_glass_cable-count1bidae2fluix_glass_cable": {
+			"type": "ItemTask",
+			"data": {
+				"item": "ae2:fluix_glass_cable",
+				"count": 1
+			}
+		},
+		"detector_rail-count1bidminecraftdetector_rail": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:detector_rail",
+				"count": 1
+			}
+		},
+		"rail-count1bidminecraftrail": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:rail",
+				"count": 1
+			}
+		},
+		"repeater-count1bidminecraftrepeater": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:repeater",
+				"count": 1
+			}
+		},
+		"comparator-count1bidminecraftcomparator": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:comparator",
+				"count": 1
+			}
+		},
+		"iron_bars-count1bidminecraftiron_bars": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:iron_bars",
+				"count": 1
+			}
+		},
+		"pipe-count1bidprettypipespipe": {
+			"type": "ItemTask",
+			"data": {
+				"item": "prettypipes:pipe",
+				"count": 1
+			}
+		},
+		"turtle_normal-count1bidcomputercraftturtle_normal": {
+			"type": "ItemTask",
+			"data": {
+				"item": "computercraft:turtle_normal",
+				"count": 1
+			}
+		},
+		"printer-count1bidcomputercraftprinter": {
+			"type": "ItemTask",
+			"data": {
+				"item": "computercraft:printer",
+				"count": 1
+			}
+		},
+		"cable-count1bidcomputercraftcable": {
+			"type": "ItemTask",
+			"data": {
+				"item": "computercraft:cable",
+				"count": 1
+			}
+		},
+		"turtle_advanced-count1bidcomputercraftturtle_advancedtagrightupgrademinecraftdiamond_shovelrightupgradenbttagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "computercraft:turtle_advanced",
+				"count": 1,
+				"nbt": "{RightUpgrade:\"minecraft:diamond_shovel\",RightUpgradeNbt:{Tag:{Damage:0}}}"
+			}
+		},
+		"scaffolding-count1bidminecraftscaffolding": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:scaffolding",
+				"count": 1
+			}
+		},
+		"disk-count1bidcomputercraftdisktagcolor5000268": {
+			"type": "ItemTask",
+			"data": {
+				"item": "computercraft:disk",
+				"count": 1,
+				"nbt": "{Color:5000268}"
+			}
+		},
+		"cast_iron_block-count1bidcreatebigcannonscast_iron_block": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createbigcannons:cast_iron_block",
+				"count": 1
+			}
+		},
+		"capacitor-count1bidcreateadditioncapacitor": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createaddition:capacitor",
+				"count": 1
+			}
+		},
+		"diesel_engine-count1bidcreatedieselgeneratorsdiesel_engine": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createdieselgenerators:diesel_engine",
+				"count": 1
+			}
+		},
+		"flamethrower-count1bidcreate_saflamethrowertag": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_sa:flamethrower",
+				"count": 1,
+				"nbt": "{}"
+			}
+		},
+		"copper_exoskeleton_chestplate-count1bidcreate_sacopper_exoskeleton_chestplatetagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_sa:copper_exoskeleton_chestplate",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"brass_drone_item-count1bidcreate_sabrass_drone_item": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_sa:brass_drone_item",
+				"count": 1
+			}
+		},
+		"goggles-count1bidcreategoggles": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:goggles",
+				"count": 1
+			}
+		},
+		"belt-count1bidtoolbeltbelttag": {
+			"type": "ItemTask",
+			"data": {
+				"item": "toolbelt:belt",
+				"count": 1,
+				"nbt": "{}"
+			}
+		},
+		"probe-count1bidtheoneprobeprobe": {
+			"type": "ItemTask",
+			"data": {
+				"item": "theoneprobe:probe",
+				"count": 1
+			}
+		},
+		"illuminant_panel-count1bidsimplylightilluminant_panel": {
+			"type": "ItemTask",
+			"data": {
+				"item": "simplylight:illuminant_panel",
+				"count": 1
+			}
 		}
 	},
 	"magic": {
@@ -20,13 +535,971 @@
 				"item": "botania:manasteel_ingot",
 				"count": 1
 			}
+		},
+		"bamboo_chimes-count1bidchimesbamboo_chimes": {
+			"type": "ItemTask",
+			"data": {
+				"item": "chimes:bamboo_chimes",
+				"count": 1
+			}
+		},
+		"potion-count1bidminecraftpotiontagpotionminecraftfire_resistance": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:potion",
+				"count": 1,
+				"nbt": "{Potion:\"minecraft:fire_resistance\"}"
+			}
+		},
+		"blue_shiny_flower-count1bidbotaniablue_shiny_flower": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:blue_shiny_flower",
+				"count": 1
+			}
+		},
+		"glimmering_stripped_livingwood_log-count1bidbotaniaglimmering_stripped_livingwood_log": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:glimmering_stripped_livingwood_log",
+				"count": 1
+			}
+		},
+		"redstone_spreader-count1bidbotaniaredstone_spreader": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:redstone_spreader",
+				"count": 1
+			}
+		},
+		"red_petal-count1bidbotaniared_petal": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:red_petal",
+				"count": 1
+			}
+		},
+		"cosmetic_clock_eye-count1bidbotaniacosmetic_clock_eye": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:cosmetic_clock_eye",
+				"count": 1
+			}
+		},
+		"iron_wand-count1bidconstructionwandiron_wandtagdamage0wand_options": {
+			"type": "ItemTask",
+			"data": {
+				"item": "constructionwand:iron_wand",
+				"count": 1,
+				"nbt": "{Damage:0,wand_options:{}}"
+			}
+		},
+		"cauldron-count1bidminecraftcauldron": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cauldron",
+				"count": 1
+			}
+		},
+		"hourglass-count1bidbotaniahourglass": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:hourglass",
+				"count": 1
+			}
+		},
+		"diluted_pool-count1bidbotaniadiluted_pool": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:diluted_pool",
+				"count": 1
+			}
+		},
+		"apothecary_default-count1bidbotaniaapothecary_default": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:apothecary_default",
+				"count": 1
+			}
+		},
+		"stripped_livingwood-count1bidbotaniastripped_livingwood": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:stripped_livingwood",
+				"count": 1
+			}
+		},
+		"purple_petal_block-count1bidbotaniapurple_petal_block": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:purple_petal_block",
+				"count": 1
+			}
+		},
+		"brew_vial-count1bidbotaniabrew_vialtagbrewkeybotaniajump_boost": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:brew_vial",
+				"count": 1,
+				"nbt": "{brewKey:\"botania:jump_boost\"}"
+			}
+		},
+		"solegnolia-count1bidbotaniasolegnolia": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:solegnolia",
+				"count": 1
+			}
+		},
+		"iron_spell_book-count1bidirons_spellbooksiron_spell_booktagisb_spellbookactivespellindex-1spellslots5spells": {
+			"type": "ItemTask",
+			"data": {
+				"item": "irons_spellbooks:iron_spell_book",
+				"count": 1,
+				"nbt": "{ISB_spellbook:{activeSpellIndex:-1,spellSlots:5,spells:[]}}"
+			}
+		},
+		"oakskin_elixir-count1bidirons_spellbooksoakskin_elixir": {
+			"type": "ItemTask",
+			"data": {
+				"item": "irons_spellbooks:oakskin_elixir",
+				"count": 1
+			}
+		},
+		"blue_chalk-count1bidchalkblue_chalktagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "chalk:blue_chalk",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"endoflame-count1bidbotaniaendoflame": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:endoflame",
+				"count": 1
+			}
+		},
+		"cosmetic_puffy_scarf-count1bidbotaniacosmetic_puffy_scarf": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:cosmetic_puffy_scarf",
+				"count": 1
+			}
+		},
+		"monocle-count1bidbotaniamonocle": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:monocle",
+				"count": 1
+			}
+		},
+		"tiny_potato-count1bidbotaniatiny_potato": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:tiny_potato",
+				"count": 1
+			}
+		},
+		"end_crystal-count1bidminecraftend_crystal": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:end_crystal",
+				"count": 1
+			}
+		},
+		"soul_lantern-count1bidminecraftsoul_lantern": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:soul_lantern",
+				"count": 1
+			}
+		},
+		"cobweb-count1bidminecraftcobweb": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cobweb",
+				"count": 1
+			}
+		},
+		"candy-count1bidsupplementariescandy": {
+			"type": "ItemTask",
+			"data": {
+				"item": "supplementaries:candy",
+				"count": 1
+			}
+		},
+		"jar-count1bidsupplementariesjar": {
+			"type": "ItemTask",
+			"data": {
+				"item": "supplementaries:jar",
+				"count": 1
+			}
+		},
+		"lapis_bricks-count1bidsupplementarieslapis_bricks": {
+			"type": "ItemTask",
+			"data": {
+				"item": "supplementaries:lapis_bricks",
+				"count": 1
+			}
+		},
+		"candle_holder_green-count1bidsupplementariescandle_holder_green": {
+			"type": "ItemTask",
+			"data": {
+				"item": "supplementaries:candle_holder_green",
+				"count": 1
+			}
+		},
+		"garlic-count1bidcroptopiagarlic": {
+			"type": "ItemTask",
+			"data": {
+				"item": "croptopia:garlic",
+				"count": 1
+			}
+		},
+		"gunpowder_cake-count1bidcreatesweetsandtreetsgunpowder_cake": {
+			"type": "ItemTask",
+			"data": {
+				"item": "createsweetsandtreets:gunpowder_cake",
+				"count": 1
+			}
+		},
+		"feather_fluff-count1bidcreate_crush_everythingfeather_fluff": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_crush_everything:feather_fluff",
+				"count": 1
+			}
+		},
+		"bar_of_black_chocolate-count1bidcreate_confectionerybar_of_black_chocolate": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_confectionery:bar_of_black_chocolate",
+				"count": 1
+			}
+		},
+		"soothing_hot_chocolate-count1bidcreate_confectionerysoothing_hot_chocolate": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_confectionery:soothing_hot_chocolate",
+				"count": 1
+			}
+		},
+		"hot_chocolate_bottle-count1bidcreate_confectioneryhot_chocolate_bottle": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create_confectionery:hot_chocolate_bottle",
+				"count": 1
+			}
+		},
+		"orange_mystical_flower-count1bidbotaniaorange_mystical_flower": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:orange_mystical_flower",
+				"count": 1
+			}
+		},
+		"white_shiny_flower-count1bidbotaniawhite_shiny_flower": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:white_shiny_flower",
+				"count": 1
+			}
+		},
+		"spark-count1bidbotaniaspark": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:spark",
+				"count": 1
+			}
+		},
+		"living_root-count1bidbotanialiving_root": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:living_root",
+				"count": 1
+			}
+		},
+		"mana_string-count1bidbotaniamana_string": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:mana_string",
+				"count": 1
+			}
+		},
+		"gray_petal-count1bidbotaniagray_petal": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:gray_petal",
+				"count": 1
+			}
+		},
+		"mana_powder-count1bidbotaniamana_powder": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:mana_powder",
+				"count": 1
+			}
+		},
+		"fertilizer-count1bidbotaniafertilizer": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:fertilizer",
+				"count": 1
+			}
+		},
+		"animated_torch-count1bidbotaniaanimated_torch": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:animated_torch",
+				"count": 1
+			}
+		},
+		"enchanting_table-count1bidminecraftenchanting_table": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:enchanting_table",
+				"count": 1
+			}
+		},
+		"brewing_stand-count1bidminecraftbrewing_stand": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:brewing_stand",
+				"count": 1
+			}
+		},
+		"potion-count1bidminecraftpotiontagpotionminecraftswiftness": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:potion",
+				"count": 1,
+				"nbt": "{Potion:\"minecraft:swiftness\"}"
+			}
+		},
+		"glistering_melon_slice-count1bidminecraftglistering_melon_slice": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:glistering_melon_slice",
+				"count": 1
+			}
+		},
+		"experience_nugget-count1bidcreateexperience_nugget": {
+			"type": "ItemTask",
+			"data": {
+				"item": "create:experience_nugget",
+				"count": 1
+			}
+		},
+		"mead-count1bidcroptopiamead": {
+			"type": "ItemTask",
+			"data": {
+				"item": "croptopia:mead",
+				"count": 1
+			}
+		},
+		"trifle-count1bidcroptopiatrifle": {
+			"type": "ItemTask",
+			"data": {
+				"item": "croptopia:trifle",
+				"count": 1
+			}
+		},
+		"lit_screaming_pumpkin-count1bidmcwholidayslit_screaming_pumpkin": {
+			"type": "ItemTask",
+			"data": {
+				"item": "mcwholidays:lit_screaming_pumpkin",
+				"count": 1
+			}
+		},
+		"feeding_upgrade-count1bidsophisticatedbackpacksfeeding_upgrade": {
+			"type": "ItemTask",
+			"data": {
+				"item": "sophisticatedbackpacks:feeding_upgrade",
+				"count": 1
+			}
+		},
+		"candle_holder_brown-count1bidsupplementariescandle_holder_brown": {
+			"type": "ItemTask",
+			"data": {
+				"item": "supplementaries:candle_holder_brown",
+				"count": 1
+			}
 		}
 	},
 	"vanilla": {
-		"minecraftfluid-1000": {
+		"minecraftlava-1000": {
 			"type": "FluidTask",
 			"data": {
-				"name": "minecraft:fluid",
+				"name": "minecraft:lava",
+				"amount": 1000
+			}
+		},
+		"firework_rocket-count1bidminecraftfirework_rockettagfireworksflight1b": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:firework_rocket",
+				"count": 1,
+				"nbt": "{Fireworks:{Flight:1b}}"
+			}
+		},
+		"yellow_glazed_terracotta-count1bidminecraftyellow_glazed_terracotta": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:yellow_glazed_terracotta",
+				"count": 1
+			}
+		},
+		"diamond_sword-count1bidminecraftdiamond_swordtagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:diamond_sword",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"spyglass-count1bidminecraftspyglass": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:spyglass",
+				"count": 1
+			}
+		},
+		"oak_boat-count1bidminecraftoak_boat": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:oak_boat",
+				"count": 1
+			}
+		},
+		"carrot-count1bidminecraftcarrot": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:carrot",
+				"count": 1
+			}
+		},
+		"baked_potato-count1bidminecraftbaked_potato": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:baked_potato",
+				"count": 1
+			}
+		},
+		"cooked_chicken-count1bidminecraftcooked_chicken": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cooked_chicken",
+				"count": 1
+			}
+		},
+		"mushroom_stew-count1bidminecraftmushroom_stew": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:mushroom_stew",
+				"count": 1
+			}
+		},
+		"bucket-count1bidminecraftbucket": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:bucket",
+				"count": 1
+			}
+		},
+		"jukebox-count1bidminecraftjukebox": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:jukebox",
+				"count": 1
+			}
+		},
+		"furnace-count1bidminecraftfurnace": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:furnace",
+				"count": 1
+			}
+		},
+		"redstone_lamp-count1bidminecraftredstone_lamp": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:redstone_lamp",
+				"count": 1
+			}
+		},
+		"honeycomb_block-count1bidminecrafthoneycomb_block": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:honeycomb_block",
+				"count": 1
+			}
+		},
+		"chainmail_chestplate-count1bidminecraftchainmail_chestplatetagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:chainmail_chestplate",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"shield-count1bidminecraftshieldtagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:shield",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"redstone-count1bidminecraftredstone": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:redstone",
+				"count": 1
+			}
+		},
+		"chest_minecart-count1bidminecraftchest_minecart": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:chest_minecart",
+				"count": 1
+			}
+		},
+		"tnt-count1bidminecrafttnt": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:tnt",
+				"count": 1
+			}
+		},
+		"wooden_hoe-count1bidminecraftwooden_hoetagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:wooden_hoe",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"stone_pickaxe-count1bidminecraftstone_pickaxetagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:stone_pickaxe",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"iron_axe-count1bidminecraftiron_axetagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:iron_axe",
+				"count": 1,
+				"nbt": "{Damage:0}"
+			}
+		},
+		"cherry_button-count1bidminecraftcherry_button": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cherry_button",
+				"count": 1
+			}
+		},
+		"yellow_carpet-count1bidminecraftyellow_carpet": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:yellow_carpet",
+				"count": 1
+			}
+		},
+		"bamboo_block-count1bidminecraftbamboo_block": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:bamboo_block",
+				"count": 1
+			}
+		},
+		"crimson_stem-count1bidminecraftcrimson_stem": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:crimson_stem",
+				"count": 1
+			}
+		},
+		"birch_wood-count1bidminecraftbirch_wood": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:birch_wood",
+				"count": 1
+			}
+		},
+		"jungle_door-count1bidminecraftjungle_door": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:jungle_door",
+				"count": 1
+			}
+		},
+		"cake-count1bidminecraftcake": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cake",
+				"count": 1
+			}
+		},
+		"apple-count1bidminecraftapple": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:apple",
+				"count": 1
+			}
+		},
+		"arrow-count1bidminecraftarrow": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:arrow",
+				"count": 1
+			}
+		},
+		"egg-count1bidminecraftegg": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:egg",
+				"count": 1
+			}
+		},
+		"target-count1bidminecrafttarget": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:target",
+				"count": 1
+			}
+		},
+		"piston-count1bidminecraftpiston": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:piston",
+				"count": 1
+			}
+		},
+		"light_blue_candle-count1bidminecraftlight_blue_candle": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:light_blue_candle",
+				"count": 1
+			}
+		},
+		"barrel-count1bidminecraftbarrel": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:barrel",
+				"count": 1
+			}
+		},
+		"sugar_cane-count1bidminecraftsugar_cane": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:sugar_cane",
+				"count": 1
+			}
+		},
+		"chest-count1bidminecraftchest": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:chest",
+				"count": 1
+			}
+		},
+		"lectern-count1bidminecraftlectern": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:lectern",
+				"count": 1
+			}
+		},
+		"cherry_sign-count1bidminecraftcherry_sign": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cherry_sign",
+				"count": 1
+			}
+		},
+		"item_frame-count1bidminecraftitem_frame": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:item_frame",
+				"count": 1
+			}
+		},
+		"flower_pot-count1bidminecraftflower_pot": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:flower_pot",
+				"count": 1
+			}
+		},
+		"jack_o_lantern-count1bidminecraftjack_o_lantern": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:jack_o_lantern",
+				"count": 1
+			}
+		},
+		"dried_kelp_block-count1bidminecraftdried_kelp_block": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:dried_kelp_block",
+				"count": 1
+			}
+		},
+		"kelp-count1bidminecraftkelp": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:kelp",
+				"count": 1
+			}
+		},
+		"cherry_fence-count1bidminecraftcherry_fence": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cherry_fence",
+				"count": 1
+			}
+		},
+		"bamboo_fence_gate-count1bidminecraftbamboo_fence_gate": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:bamboo_fence_gate",
+				"count": 1
+			}
+		},
+		"crimson_door-count1bidminecraftcrimson_door": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:crimson_door",
+				"count": 1
+			}
+		},
+		"warped_trapdoor-count1bidminecraftwarped_trapdoor": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:warped_trapdoor",
+				"count": 1
+			}
+		},
+		"stone_pressure_plate-count1bidminecraftstone_pressure_plate": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:stone_pressure_plate",
+				"count": 1
+			}
+		},
+		"iron_bars-count1bidminecraftiron_bars": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:iron_bars",
+				"count": 1
+			}
+		},
+		"purpur_block-count1bidminecraftpurpur_block": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:purpur_block",
+				"count": 1
+			}
+		},
+		"chiseled_polished_blackstone-count1bidminecraftchiseled_polished_blackstone": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:chiseled_polished_blackstone",
+				"count": 1
+			}
+		},
+		"red_nether_bricks-count1bidminecraftred_nether_bricks": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:red_nether_bricks",
+				"count": 1
+			}
+		},
+		"dark_prismarine_stairs-count1bidminecraftdark_prismarine_stairs": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:dark_prismarine_stairs",
+				"count": 1
+			}
+		},
+		"prismarine-count1bidminecraftprismarine": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:prismarine",
+				"count": 1
+			}
+		},
+		"cut_sandstone-count1bidminecraftcut_sandstone": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cut_sandstone",
+				"count": 1
+			}
+		},
+		"mud_brick_wall-count1bidminecraftmud_brick_wall": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:mud_brick_wall",
+				"count": 1
+			}
+		},
+		"brick_stairs-count1bidminecraftbrick_stairs": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:brick_stairs",
+				"count": 1
+			}
+		},
+		"chiseled_deepslate-count1bidminecraftchiseled_deepslate": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:chiseled_deepslate",
+				"count": 1
+			}
+		},
+		"chiseled_stone_bricks-count1bidminecraftchiseled_stone_bricks": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:chiseled_stone_bricks",
+				"count": 1
+			}
+		},
+		"mossy_cobblestone-count1bidminecraftmossy_cobblestone": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:mossy_cobblestone",
+				"count": 1
+			}
+		},
+		"chain-count1bidminecraftchain": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:chain",
+				"count": 1
+			}
+		},
+		"orange_wool-count1bidminecraftorange_wool": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:orange_wool",
+				"count": 1
+			}
+		},
+		"green_terracotta-count1bidminecraftgreen_terracotta": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:green_terracotta",
+				"count": 1
+			}
+		},
+		"red_concrete-count1bidminecraftred_concrete": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:red_concrete",
+				"count": 1
+			}
+		},
+		"lime_glazed_terracotta-count1bidminecraftlime_glazed_terracotta": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:lime_glazed_terracotta",
+				"count": 1
+			}
+		},
+		"black_stained_glass-count1bidminecraftblack_stained_glass": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:black_stained_glass",
+				"count": 1
+			}
+		},
+		"pink_bed-count1bidminecraftpink_bed": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:pink_bed",
+				"count": 1
+			}
+		},
+		"moss_block-count1bidminecraftmoss_block": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:moss_block",
+				"count": 1
+			}
+		},
+		"gravel-count1bidminecraftgravel": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:gravel",
+				"count": 1
+			}
+		},
+		"cactus-count1bidminecraftcactus": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:cactus",
+				"count": 1
+			}
+		},
+		"oak_log-count1bidminecraftoak_log": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:oak_log",
+				"count": 1
+			}
+		},
+		"spruce_wood-count1bidminecraftspruce_wood": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:spruce_wood",
+				"count": 1
+			}
+		},
+		"stripped_birch_log-count1bidminecraftstripped_birch_log": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:stripped_birch_log",
+				"count": 1
+			}
+		},
+		"stripped_jungle_wood-count1bidminecraftstripped_jungle_wood": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:stripped_jungle_wood",
+				"count": 1
+			}
+		},
+		"acacia_planks-count1bidminecraftacacia_planks": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:acacia_planks",
+				"count": 1
+			}
+		},
+		"dark_oak_stairs-count1bidminecraftdark_oak_stairs": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:dark_oak_stairs",
+				"count": 1
+			}
+		},
+		"mangrove_slab-count1bidminecraftmangrove_slab": {
+			"type": "ItemTask",
+			"data": {
+				"item": "minecraft:mangrove_slab",
+				"count": 1
+			}
+		},
+		"minecraftwater-1000": {
+			"type": "FluidTask",
+			"data": {
+				"name": "minecraft:water",
 				"amount": 1000
 			}
 		}
