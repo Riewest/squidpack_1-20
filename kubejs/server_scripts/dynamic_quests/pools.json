@@ -1,0 +1,34 @@
+{
+	"tech": {
+		"turtle_advanced-count1bidcomputercraftturtle_advancedtagrightupgrademinecraftdiamond_pickaxerightupgradenbttagdamage0": {
+			"type": "ItemTask",
+			"data": {
+				"item": "computercraft:turtle_advanced",
+				"count": 1,
+				"nbt": "{RightUpgrade:\"minecraft:diamond_pickaxe\",RightUpgradeNbt:{Tag:{Damage:0}}}"
+			}
+		},
+		"forgeenergytask-1000": {
+			"type": "ForgeEnergyTask",
+			"data": 1000
+		}
+	},
+	"magic": {
+		"manasteel_ingot-count1bidbotaniamanasteel_ingot": {
+			"type": "ItemTask",
+			"data": {
+				"item": "botania:manasteel_ingot",
+				"count": 1
+			}
+		}
+	},
+	"vanilla": {
+		"minecraftfluid-1000": {
+			"type": "FluidTask",
+			"data": {
+				"name": "minecraft:fluid",
+				"amount": 1000
+			}
+		}
+	}
+}

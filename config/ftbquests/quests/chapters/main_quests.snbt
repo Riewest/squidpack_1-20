@@ -241,8 +241,9 @@
 		}
 		{
 			dependencies: [
-				"2F2FB7B760E164B3"
 				"243DA64A9A7395C1"
+				"2F2FB7B760E164B3"
+				"0025B3DF84E7AF31"
 			]
 			icon: "botania:dice"
 			id: "1985B1B03E268A22"
@@ -259,6 +260,7 @@
 				title: "Dynamic Questing"
 				type: "checkmark"
 			}]
+			title: "Dynamic Questing"
 			x: 2.5d
 			y: 2.5d
 		}
