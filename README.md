@@ -23,7 +23,7 @@ Several questlines, both static and dynamic, have also been added to incentivize
     - <details>
         <summary><u>Large Ore Deposit Example</u></summary>
 
-        ![Player Upgrades](kubejs\assets\kubejs\textures\info\tuff_ore_deposit.png)
+        ![Player Upgrades](kubejs/assets/kubejs/textures/info/tuff_ore_deposit.png)
       </details>
     
 
