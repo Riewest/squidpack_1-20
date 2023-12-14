@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     event.shaped('rootsclassic:bark_knife', [
         ' SS',
         'SMS',
-        'WS'
+        'WS '
     ], {
         S: '#minecraft:saplings',
         W: '#forge:rods/wooden',
