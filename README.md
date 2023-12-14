@@ -24,6 +24,6 @@ A few unique questlines (See Below) have also been added to incentivize needing 
     - Completing Quests in the `Player Upgrades` chapter will grant you a pylon potion filter which can be placed in a pylon to give yourself permanent effects.
 
   - **Dynamic Questing:** 
-    - We've added 3 dynamic questlines (Vanilla, Tech, Magic) that when completed will generate a new quest in the line.
+    - We've added 3 dynamic questlines (Vanilla, Tech, Magic) that when completed will generate a new random quest in the line.
     - Each quest completed will give your FTB team +1 point to its respective scoreboard and +1 to your total score
     - The first team to complete a quest will get its team name added to the quest subtitle. The team will also recieve +1 to the `First Completions` scoreboard.
