@@ -4,7 +4,7 @@ Item Teleportation? Player Teleportation? Who needs em.
 
 This pack spawned from the idea that modded minecraft worlds tend to have very localized infrastructure. Making certain aspects of some mods (i.e. Create Trains) a less attractive way to transport items around your world.
 
-By eliminating most easy forms of modded item transportation this pack hopes that players will come up with more creative and entertaining ways of getting items from Point A to Point B.
+By eliminating most easy forms of modded item/player transportation this pack hopes that players will come up with more creative and entertaining ways of getting items from Point A to Point B.
 
 A few unique questlines (See Below) have also been added to incentivize needing alot of items.
 
