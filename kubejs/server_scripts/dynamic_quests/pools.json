@@ -8,9 +8,9 @@
 				"nbt": "{RightUpgrade:\"minecraft:diamond_pickaxe\",RightUpgradeNbt:{Tag:{Damage:0}}}"
 			}
 		},
-		"forgeenergytask-1000": {
+		"forgeenergytask-35000": {
 			"type": "ForgeEnergyTask",
-			"data": 1000
+			"data": 35000
 		},
 		"pair_of_cannon_wheels-count1bidcreatebigcannonspair_of_cannon_wheels": {
 			"type": "ItemTask",
