@@ -65,7 +65,8 @@ JEIEvents.hideItems(event => {
         'sophisticatedstorage:compression_upgrade',
         'ae2:facade',
         Item.of('wstweaks:lava_blade', '{Damage:0}'), 
-        Item.of('wstweaks:blaze_blade', '{Damage:0}')
+        Item.of('wstweaks:blaze_blade', '{Damage:0}'),
+        'advancedperipherals:chunk_controller'
     ])
 })
 

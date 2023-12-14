@@ -87,11 +87,8 @@
 		{
 			dependencies: ["5A42C8470CC350E9"]
 			description: [
-				"&l&cEnd portals DO NOT generate!&r&r"
-				"You'll have to craft some frames and make your own."
-				""
-				""
-				"{image:kubejs:textures/info/no_end_portal.png width:200 height:200 align:1}"
+				"&l&cStrongholds DO NOT generate!&r&r"
+				"You'll have to craft your own frames and create your own portal."
 			]
 			id: "53FF2B6D648A8BDA"
 			rewards: [
@@ -107,7 +104,7 @@
 					xp: 376
 				}
 			]
-			subtitle: "Fine, I'll do it Myself..."
+			subtitle: "Fine, I'll do it myself..."
 			tasks: [{
 				consume_items: false
 				count: 12L
@@ -115,7 +112,7 @@
 				item: "minecraft:end_portal_frame"
 				type: "item"
 			}]
-			title: "What!? No End Portals?"
+			title: "What!? No Strongholds?"
 			x: 1.5d
 			y: 5.5d
 		}

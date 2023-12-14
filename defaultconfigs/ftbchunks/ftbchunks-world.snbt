@@ -1,0 +1,7 @@
+{
+	# Max force loaded chunks.
+	# You can override this with FTB Ranks 'ftbchunks.max_force_loaded' permission
+	# Default: 25
+	# Range: -∞ ~ +∞
+	max_force_loaded_chunks: 50
+}

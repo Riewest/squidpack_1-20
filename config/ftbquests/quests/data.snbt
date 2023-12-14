@@ -9,15 +9,15 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	icon: "minecraft:chest_minecart"
+	icon: "minecraft:tuff"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
-		monster: 600
-		passive: 4000
+		monster: 0
+		passive: 0
 	}
 	pause_game: false
 	progression_mode: "linear"
-	title: "Moving is Hard"
+	title: "Moving is Tuff"
 	version: 13
 }

@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
     event.remove({id:"computercraft:computer_normal"})
     event.remove({id:"computercraft:computer_advanced"})
     event.remove({id:"computercraft:wireless_modem_advanced"})
+    event.remove({id:"advancedperipherals:chunk_controller"})
     //additions
     event.shaped('computercraft:computer_normal', [
       'SSS',
