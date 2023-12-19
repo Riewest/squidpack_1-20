@@ -6,4 +6,11 @@ ServerEvents.recipes(event => {
 			'minecraft:clay'
 		]
     )
+	event.shaped(Item.of('4x minecraft:chest'), [
+        'LLL',
+        'L L',
+        'LLL'
+    ], {
+        L: '#minecraft:logs'
+    })
 })
