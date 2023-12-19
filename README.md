@@ -23,7 +23,7 @@ Several questlines, both static and dynamic, have also been added to incentivize
     - <details>
         <summary><u>Large Ore Deposit Example</u></summary>
 
-        ![Player Upgrades](kubejs\assets\kubejs\textures\info\tuff_ore_deposit.png)
+        ![Player Upgrades](kubejs/assets/kubejs/textures/info/tuff_ore_deposit.png)
       </details>
     
 
@@ -39,7 +39,8 @@ Several questlines, both static and dynamic, have also been added to incentivize
     - We've added 3 dynamic questlines (Vanilla, Tech, Magic) that when completed, will generate a random new quest in the same line.
       - Every playthrough will be different!
     - Each quest completed will give your FTB team +1 point to its respective scoreboard and +1 to your total score
-    ![Dynamic Quest Example 1](pictures/demo_scoreboard.png)
+      
+      ![Dynamic Quest Example 1](pictures/demo_scoreboard.png)
     - The first team to complete a quest will get its team name added to the quest's subtitle. The team will also recieve +1 to the `First Completions` scoreboard. An announcement will be displayed in chat to let everyone know of your achievement!
     
       ![Dynamic Quest Example 1](pictures/demo_quest_complete.png)
